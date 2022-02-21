@@ -1,0 +1,8 @@
+*.bak
+*.mti
+transcript
+*.wlf
+*.qsf
+*.qpf
+*.qws
+.swp
