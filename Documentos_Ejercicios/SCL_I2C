@@ -1,0 +1,18 @@
+-¿Qué señal habilita la generación de SCL?
+	ena_SCL
+-En la primera parte del ciclo de generacion de un periodo de SCL, esta señal está a nivel alto. ¿Por que?
+	Porque asi lo requiere el estandar I2C
+-¡Que condiciones determinan el instante de activación de las señales ena_out_SDA y ena_in_SDA?
+
+-¿Para que sirven las salidas ena_stop_i2c y ena_start_i2c?
+
+-¿En qué instante de tiempo se genera la señal SCL_up?
+
+EL núcleo del modulo es un contador (cnt_SCL) EL proceso que lo modela controla también el estado de un flip-flop (start). EN base al estado de cuenta de cnt_SCL se generan las salidas de temporizacion del módulo. Analice el código para contestar las siguientes cuestiones.
+-¿Cuál es el módulo de cuenta de cnt_SCL?
+	125
+-El contador modelado mediantes cnt_SCL cuenta mientras ena_SCL vale "1". Sabiendo que ena_SCL se desactiva tras el flanco de reloj en que SCL_up vale "1", explique cómo evoluciona la cuenta a partir de ese momento y deduzca el porqué de este funcionamiento. Indique, además, cuando se para la cuenta, en qué estado quedan cnt_SCL y start y por qué.
+	Cuenta hasta la generacion de ena_start
+-Analice el valor que toma start
+	Inicialmente esta a 0, pero despues del primer ciclo se pone a 1. Start tiene influencia sobre algunas señales
+	Si 
