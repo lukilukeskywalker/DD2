@@ -137,8 +137,8 @@ begin
             fin_tx <= '0';
             tx_ok  <= '0';
             -- ******************************: ejercicio 1
-            nWR    <=                                 -- En el primer byte, el master "escribe" sea nW o R
-            nWR_op <=                                 -- Registra el tipo de operacion (para restantes bytes)
+            nWR    <=  '0';                           -- En el primer byte, el master "escribe" sea nW o R
+            nWR_op <=  tipo_op_nW_R;                  -- Registra el tipo de operacion (para restantes bytes)
 
           end if;
 
@@ -151,7 +151,7 @@ begin
           if cnt_pulsos_SCL = 8 then                  -- de un byte para ir a comprobación de ACK
             estado <= ACK;
 
-          elsif          then   -- ******************Ejercicio 3
+          elsif SCL_up = '1'    then   -- ******************Ejercicio 3
             cnt_pulsos_SCL <= cnt_pulsos_SCL + 1;
 
           end if;
@@ -199,15 +199,15 @@ begin
 
   -- Control del generador de SCL:
                        -- ******************************: ejercicio 6
-  ena_SCL <=                                             -- Se habilita tras ini
-                                                         -- Se inhabilita cuando SCL_up vale 1
-                                                         -- en el flanco de subida de SCL despues de ACK
+  ena_SCL <= '1' when estado /= libre or estado /= stop else	-- Se habilita tras ini
+             '0';	       					-- Se inhabilita cuando SCL_up vale 1
+                     		                                -- en el flanco de subida de SCL despues de ACK
   --************************************************************************************************************
 
   -- Control del registro de salida: 
                        -- ******************************: ejercicio 2
-  carga_reg_out_SDA    <=                                         -- Carga el byte a transmitir... 
-                                                                  -- ...preservando el valor de SDA (bit mas alto del registro)
+  carga_reg_out_SDA    <= not nWR when estado = cargar_byte else '0'; -- Carga el byte a transmitir... 
+ -- nWR es 0 cuando se desea escribir y 1 cuando se desea leer                                                                 -- ...preservando el valor de SDA (bit mas alto del registro)
 
   reset_SDA <= ini         when estado = libre           else     -- Condicion de start  (ini cuando estado = libre)
                ena_out_SDA when estado = inhabilitar_SCL else     -- Preparacion de stop (cambio de SDA cuando estado = inhabilitar)
@@ -215,25 +215,26 @@ begin
                '0';
 
                        -- ******************************: ejercicio 8
-  ACK_lectura <=                                                  -- en una operacion de lectura deben asentirse todos los bytes leidos
-                                                                  -- menos el ultimo
+  ACK_lectura <= (nWR and (not last_byte)) when estado = ACK else  -- en una operacion de lectura deben asentirse todos los bytes leidos
+                  '0';                                                -- menos el ultimo
 
                        -- ******************************: ejercicio 7
-  preset_SDA <=                                                   -- Condición de stop(segnalizacion de gen_SCL cuando estado = stop)
-                                                                  -- Nota 1: estado = stop es redundante -se deja por claridad
+  preset_SDA <= ena_stop_i2c when estado = stop else              -- Condición de stop(segnalizacion de gen_SCL cuando estado = stop)
+                '0';                                              -- Nota 1: estado = stop es redundante -se deja por claridad
                                                                   -- Nota 2: reset_SDA y preset_SDA solo 
                                                                   -- afectan al bit de mayor peso del registro de 
                                                                   -- desplazamiento de salida 
 
                        -- ******************************: ejercicio 5
-  desplaza_reg_out_SDA <=                                         -- Se desplaza el dato cuando lo indica la segnal de gen_SCL                         
-                                                                  -- Nota: Esta segnal de control tiene menos prioridas
-                                                                  -- que reset_SDA y preset_SDA
+  desplaza_reg_out_SDA <= ena_out_SDA;			       -- Se desplaza el dato cuando lo indica la segnal de gen_SCL                         
+                                                               -- Nota: Esta segnal de control tiene menos prioridas
+                                                               -- que reset_SDA y preset_SDA
   --************************************************************************************************************
 
   -- Control del registro de entrada:
                        -- ******************************: ejercicio 4
-  leer_bit_SDA <=                                                 -- Se capturan todos los valores menos el ACK
+  leer_bit_SDA <= ena_in_SDA when estado /=ACK
+		else '0';                                           -- Se capturan todos los valores menos el ACK
                   
 
   reset_reg_in_SDA <= ini when estado = libre else                -- Se resete al principio de cualquier tx

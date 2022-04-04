@@ -1,0 +1,38 @@
+|gen_SCL
+clk => start.CLK
+clk => cnt_SCL[0].CLK
+clk => cnt_SCL[1].CLK
+clk => cnt_SCL[2].CLK
+clk => cnt_SCL[3].CLK
+clk => cnt_SCL[4].CLK
+clk => cnt_SCL[5].CLK
+clk => cnt_SCL[6].CLK
+nRst => start.ACLR
+nRst => cnt_SCL[0].PRESET
+nRst => cnt_SCL[1].ACLR
+nRst => cnt_SCL[2].ACLR
+nRst => cnt_SCL[3].ACLR
+nRst => cnt_SCL[4].ACLR
+nRst => cnt_SCL[5].ACLR
+nRst => cnt_SCL[6].ACLR
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => cnt_SCL.OUTPUTSELECT
+ena_SCL => start.OUTPUTSELECT
+ena_SCL => ena_out_SDA.DATAB
+ena_SCL => ena_in_SDA.IN1
+ena_SCL => ena_stop_i2c.DATAB
+ena_SCL => ena_start_i2c.DATAB
+ena_SCL => n_ctrl_SCL.DATAA
+ena_out_SDA << ena_out_SDA.DB_MAX_OUTPUT_PORT_TYPE
+ena_in_SDA << ena_in_SDA.DB_MAX_OUTPUT_PORT_TYPE
+ena_stop_i2c << ena_stop_i2c.DB_MAX_OUTPUT_PORT_TYPE
+ena_start_i2c << ena_start_i2c.DB_MAX_OUTPUT_PORT_TYPE
+SCL_up << SCL_up.DB_MAX_OUTPUT_PORT_TYPE
+SCL <> SCL
+
+
