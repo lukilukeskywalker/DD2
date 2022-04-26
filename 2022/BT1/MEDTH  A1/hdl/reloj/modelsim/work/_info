@@ -1,0 +1,477 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj
+Ecnt_horas
+Z0 w1649526501
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 44
+Z5 d/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim
+Z6 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_horas.vhd
+Z7 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_horas.vhd
+l0
+L5 1
+V1:^:2@jG6m8UaXN<z0<:=2
+!s100 aI8e><ABL=BzoeDnk=bS92
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1649526595
+!i10b 1
+Z10 !s108 1649526595.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_horas.vhd|
+Z12 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_horas.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+Z15 DEx4 work 9 cnt_horas 0 22 1:^:2@jG6m8UaXN<z0<:=2
+!i122 44
+l32
+L19 140
+VA>g_d6l?fA6<:V[_UNJZz0
+!s100 MQbgo9m=K?3XlH:GgmZz60
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecnt_min
+Z16 w1515056399
+R1
+R2
+R3
+R4
+!i122 27
+R5
+Z17 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_min.vhd
+Z18 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_min.vhd
+l0
+L5 1
+VoAH2adR97];cBg09a6bod0
+!s100 aHL4EU5hg<zV>=noLWdU>2
+R8
+32
+Z19 !s110 1645459130
+!i10b 1
+Z20 !s108 1645459130.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_min.vhd|
+Z22 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_min.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+Z23 DEx4 work 7 cnt_min 0 22 oAH2adR97];cBg09a6bod0
+!i122 27
+l20
+L17 54
+VA=KVNVA>k5;bJ:W]Rm42S2
+!s100 iXzQUhjVg=3G>][gEFTHF1
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+Ecnt_reloj
+Z24 w1515056436
+R1
+R2
+R3
+R4
+!i122 28
+R5
+Z25 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_reloj.vhd
+Z26 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_reloj.vhd
+l0
+L5 1
+VO7k9o5bWIkYKbHFgMG3b^1
+!s100 76RXSk:YS<>>Yfd3`Pz1J3
+R8
+32
+R19
+!i10b 1
+R20
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_reloj.vhd|
+Z28 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_reloj.vhd|
+!i113 1
+R13
+R14
+Aestructural
+R15
+R23
+Z29 DEx4 work 7 cnt_seg 0 22 VC27CeKcY4XXBi4;HKzXQ3
+R1
+R2
+R3
+R4
+Z30 DEx4 work 9 cnt_reloj 0 22 O7k9o5bWIkYKbHFgMG3b^1
+!i122 28
+l26
+L22 36
+VSeBoKYACEW4`H=VR2170k3
+!s100 H^k<H=L8?bkmUhV0gbZNK3
+R8
+32
+R19
+!i10b 1
+R20
+R27
+R28
+!i113 1
+R13
+R14
+Ecnt_seg
+Z31 w1514993166
+R1
+R2
+R3
+R4
+!i122 29
+R5
+Z32 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_seg.vhd
+Z33 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_seg.vhd
+l0
+L5 1
+VVC27CeKcY4XXBi4;HKzXQ3
+!s100 <H<dG<kLmzAY7J3?Di<9S0
+R8
+32
+R19
+!i10b 1
+R20
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_seg.vhd|
+Z35 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/cnt_seg.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+R29
+!i122 29
+l18
+L15 55
+VT:H7?aX3fCQB4^GAzlOgS1
+!s100 Zk>A@O@^mYb_KDeY1d@FC2
+R8
+32
+R19
+!i10b 1
+R20
+R34
+R35
+!i113 1
+R13
+R14
+Ectrl_reloj
+Z36 w1516881785
+R1
+R2
+R3
+R4
+!i122 30
+R5
+Z37 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/ctrl_reloj.vhd
+Z38 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/ctrl_reloj.vhd
+l0
+L5 1
+VloLlmli<lYBRm2zIh;?2d3
+!s100 94:m`kOJoCWd18`UD@h;S1
+R8
+32
+R19
+!i10b 1
+R20
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/ctrl_reloj.vhd|
+Z40 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/ctrl_reloj.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+Z41 DEx4 work 10 ctrl_reloj 0 22 loLlmli<lYBRm2zIh;?2d3
+!i122 30
+l43
+L23 137
+V5ilG@9:2A@FTlZo?T7IHQ0
+!s100 5DVUjigBo1mKjcYbk``zh3
+R8
+32
+R19
+!i10b 1
+R20
+R39
+R40
+!i113 1
+R13
+R14
+Ppack_test_reloj
+R1
+R2
+R3
+R4
+!i122 46
+w1649529604
+R5
+Z42 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/pack_test_reloj.vhd
+Z43 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/pack_test_reloj.vhd
+l0
+L5 1
+V;5>SX;W^VB0ZQdK?>ZV0>0
+!s100 VPEWzGVTWlBQTZVVD43<11
+R8
+32
+b1
+!s110 1649787412
+!i10b 1
+!s108 1649787411.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/pack_test_reloj.vhd|
+Z45 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/pack_test_reloj.vhd|
+!i113 1
+R13
+R14
+Bbody
+Z46 DPx4 work 15 pack_test_reloj 0 22 ;5>SX;W^VB0ZQdK?>ZV0>0
+R1
+R2
+R3
+R4
+!i122 32
+l0
+L68 1
+VkW[?;O=UDT_WFQei;EKko3
+!s100 g@fS7JY74hz[HHC[RAbKI1
+R8
+32
+R19
+!i10b 1
+R20
+R44
+R45
+!i113 1
+R13
+R14
+w1645459075
+Ereloj
+Z47 w1514917281
+R1
+R2
+R3
+R4
+!i122 31
+R5
+Z48 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/reloj.vhd
+Z49 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/reloj.vhd
+l0
+L5 1
+V=FU40]=4LdEDf8]28gQDL2
+!s100 ;3c`LK7ZkEUQ;S[S62FB>2
+R8
+32
+R19
+!i10b 1
+R20
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/reloj.vhd|
+Z51 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/hdl/reloj.vhd|
+!i113 1
+R13
+R14
+Aestructural
+R30
+R41
+R1
+R2
+R3
+R4
+Z52 DEx4 work 5 reloj 0 22 =FU40]=4LdEDf8]28gQDL2
+!i122 31
+l29
+L22 41
+V<:KfMoGQcAnlS0KRECOE=0
+!s100 =2^z:`D`1<kFjL?OzX_RZ2
+R8
+32
+R19
+!i10b 1
+R20
+R50
+R51
+!i113 1
+R13
+R14
+Etest_estimulos_reloj
+Z53 w1645460791
+R46
+R1
+R2
+R3
+R4
+!i122 40
+R5
+Z54 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_estimulos_reloj.vhd
+Z55 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_estimulos_reloj.vhd
+l0
+L7 1
+V9dDVCQaN:Sdo<M;_EogB20
+!s100 _^@5<Pj14_AK1YO;eHzdS3
+R8
+32
+Z56 !s110 1645460797
+!i10b 1
+Z57 !s108 1645460797.000000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_estimulos_reloj.vhd|
+Z59 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_estimulos_reloj.vhd|
+!i113 1
+R13
+R14
+Atest
+R46
+R1
+R2
+R3
+R4
+Z60 DEx4 work 20 test_estimulos_reloj 0 22 9dDVCQaN:Sdo<M;_EogB20
+!i122 40
+l26
+L24 75
+VhznQ;TAgnEHQb?[>=9emn3
+!s100 N`Dm=hPSh[^:HcL8HDlg03
+R8
+32
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 1
+R13
+R14
+Etest_monitor_reloj
+Z61 w1649526588
+R46
+R1
+R2
+R3
+R4
+!i122 43
+R5
+Z62 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_monitor_reloj.vhd
+Z63 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_monitor_reloj.vhd
+l0
+L7 1
+VJAj^:[5mcQ]KW;DzQc]kJ1
+!s100 O^]AL_gmU>gRKKK:>5FiN2
+R8
+32
+Z64 !s110 1649526593
+!i10b 1
+Z65 !s108 1649526593.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_monitor_reloj.vhd|
+Z67 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_monitor_reloj.vhd|
+!i113 1
+R13
+R14
+Atest
+R46
+R1
+R2
+R3
+R4
+Z68 DEx4 work 18 test_monitor_reloj 0 22 JAj^:[5mcQ]KW;DzQc]kJ1
+!i122 43
+l26
+L24 476
+VD?n=DLEK@F[nYNoUN_nb_3
+!s100 D=G5Vb5Q9f5l8dJ9>nb[A2
+R8
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R13
+R14
+Etest_reloj
+Z69 w1645459070
+R46
+R1
+R2
+R3
+R4
+!i122 35
+R5
+Z70 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_reloj.vhd
+Z71 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_reloj.vhd
+l0
+L7 1
+Vf1;hkFFDhU7lA:=iZPi9n1
+!s100 Mnj]8jAL<FF]:Ci9`7iWD1
+R8
+32
+R19
+!i10b 1
+R20
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_reloj.vhd|
+Z73 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim/test_reloj.vhd|
+!i113 1
+R13
+R14
+Atest
+R68
+R60
+R52
+R46
+R1
+R2
+R3
+R4
+DEx4 work 10 test_reloj 0 22 f1;hkFFDhU7lA:=iZPi9n1
+!i122 35
+l28
+L10 100
+VL2=466=?C0YS1Z6M=:2<T2
+!s100 e5I8^YBJ:F5?LNCl5_kTd1
+R8
+32
+R19
+!i10b 1
+R20
+R72
+R73
+!i113 1
+R13
+R14

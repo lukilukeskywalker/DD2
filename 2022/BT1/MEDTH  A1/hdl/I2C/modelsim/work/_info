@@ -1,0 +1,800 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/reloj/modelsim
+Eagente_slave_i2c
+Z0 w1489594698
+Z1 DPx4 work 21 pack_agente_slave_i2c 0 22 GGU6X[37kOZb9jSGCT@SJ1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 41
+Z6 d/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim
+Z7 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/agente_slave_i2c.vhd
+Z8 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/agente_slave_i2c.vhd
+l0
+L11 1
+V@T^_FS3f1m62FY@=<77XD1
+!s100 =4b7FJbj[YPUeGfT_nY3m1
+Z9 OV;C;2020.1;71
+32
+Z10 !s110 1649182364
+!i10b 1
+Z11 !s108 1649182364.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/agente_slave_i2c.vhd|
+!s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/agente_slave_i2c.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Asim_struct
+Z15 DEx4 work 19 sequencer_slave_i2c 0 22 bSN@BMc7mZd4_U::gJ[263
+Z16 DEx4 work 17 monitor_slave_i2c 0 22 1BmN3WfIDUb]gPO]Hl_6i1
+Z17 DEx4 work 18 colector_slave_i2c 0 22 Iz4iU?ggB5`YTBo75<oXc3
+Z18 DEx4 work 19 responder_slave_i2c 0 22 R[DbUGgZ4CKJ0SP[0kHlN3
+R1
+R2
+R3
+R4
+R5
+Z19 DEx4 work 16 agente_slave_i2c 0 22 @T^_FS3f1m62FY@=<77XD1
+!i122 41
+l32
+L22 41
+VTRXdM[OfA^<ZN<0<Ud]XG0
+!s100 V`cKN71m;o4YkA@;1Y=dP3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+Z20 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/agente_slave_i2c.vhd|
+!i113 1
+R13
+R14
+Ecolector_slave_i2c
+Z21 w1489594690
+R1
+R2
+R3
+R4
+R5
+!i122 31
+R6
+Z22 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/colector_slave_i2c.vhd
+Z23 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/colector_slave_i2c.vhd
+l0
+L35 1
+VIz4iU?ggB5`YTBo75<oXc3
+!s100 5RX2icEjCZEF2zOim1^je2
+R9
+32
+Z24 !s110 1649182354
+!i10b 1
+Z25 !s108 1649182354.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/colector_slave_i2c.vhd|
+Z27 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/colector_slave_i2c.vhd|
+!i113 1
+R13
+R14
+Asim
+R1
+R2
+R3
+R4
+R5
+R17
+!i122 31
+l53
+L46 65
+VUeHMSXToQed=c<:]^N`7c0
+!s100 `>OAVT4YLBhRg[RjIXH6b2
+R9
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R13
+R14
+Ectrl_i2c
+Z28 w1649101358
+R2
+R3
+R4
+R5
+!i122 26
+R6
+Z29 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/control_i2c.vhd
+Z30 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/control_i2c.vhd
+l0
+L65 1
+VBzQUC7eeecM0zKG5:DMe52
+!s100 k?jSj<7_`33DL;l9]KW`Y3
+R9
+32
+Z31 !s110 1649182353
+!i10b 1
+Z32 !s108 1649182353.000000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/control_i2c.vhd|
+Z34 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/control_i2c.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+Z35 DEx4 work 8 ctrl_i2c 0 22 BzQUC7eeecM0zKG5:DMe52
+!i122 26
+l119
+L104 140
+VkiDT]ohk8il?VFmoj`m]W2
+!s100 Vnj@RZlm6R9YPbIY3[D3O1
+R9
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R13
+R14
+Edriver_clk_nrst
+Z36 w1488198744
+R4
+R5
+!i122 32
+R6
+Z37 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/driver_clk_nRst.vhd
+Z38 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/driver_clk_nRst.vhd
+l0
+L8 1
+V_W0o=L90PDf6>OMZm1?ZB3
+!s100 @j]Jzm[oR>=iRjbZ==cjb3
+R9
+32
+R24
+!i10b 1
+R25
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/driver_clk_nRst.vhd|
+Z40 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/driver_clk_nRst.vhd|
+!i113 1
+R13
+R14
+Asim
+R4
+R5
+Z41 DEx4 work 15 driver_clk_nrst 0 22 _W0o=L90PDf6>OMZm1?ZB3
+!i122 32
+l17
+L16 31
+V_5]ddA`;hH2<PMQQzR<;G0
+!s100 MWSl@CKm4>3WQg6z50bCB2
+R9
+32
+R24
+!i10b 1
+R25
+R39
+R40
+!i113 1
+R13
+R14
+Efiltro_sda
+Z42 w1518693829
+R2
+R3
+R4
+R5
+!i122 27
+R6
+Z43 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/filtro_SDA.vhd
+Z44 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/filtro_SDA.vhd
+l0
+L34 1
+V954jnbAG12K<@17ooc0o`0
+!s100 Az8cVgn;:^_]P_[V0j7h32
+R9
+32
+R31
+!i10b 1
+R32
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/filtro_SDA.vhd|
+Z46 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/filtro_SDA.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+Z47 DEx4 work 10 filtro_sda 0 22 954jnbAG12K<@17ooc0o`0
+!i122 27
+l46
+L42 25
+V1]cg>FiNA1iE>iD;U]?iV1
+!s100 @W1z59UHTPnV2^43?D2Cl0
+R9
+32
+R31
+!i10b 1
+R32
+R45
+R46
+!i113 1
+R13
+R14
+Egen_scl
+Z48 w1488134200
+R2
+R3
+R4
+R5
+!i122 25
+R6
+Z49 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/gen_SCL.vhd
+Z50 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/gen_SCL.vhd
+l0
+L72 1
+V[hO`Qan8jMXIiX5OS7gN<2
+!s100 9TIN2CJ?;ef8_CK>XK[4@1
+R9
+32
+R31
+!i10b 1
+R32
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/gen_SCL.vhd|
+Z52 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/gen_SCL.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+Z53 DEx4 work 7 gen_scl 0 22 [hO`Qan8jMXIiX5OS7gN<2
+!i122 25
+l112
+L85 85
+V:l61jfdNbYoP68dRi6gGk1
+!s100 =j@DTIS1hHaZPh4oJZVa>1
+R9
+32
+R31
+!i10b 1
+R32
+R51
+R52
+!i113 1
+R13
+R14
+Einterfaz_i2c
+Z54 w1550159968
+R2
+R3
+R4
+R5
+!i122 40
+R6
+Z55 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/interfaz_i2c.vhd
+Z56 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/interfaz_i2c.vhd
+l0
+L43 1
+V9S10W=32lFhmHMlj_znbj0
+!s100 EUFNJ1X8O;GoV@o57=ohO0
+R9
+32
+R24
+!i10b 1
+R25
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/interfaz_i2c.vhd|
+Z58 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/interfaz_i2c.vhd|
+!i113 1
+R13
+R14
+Aestructural
+Z59 DEx4 work 10 reg_in_sda 0 22 >Z<U:4EBSAG6@KC^^`W6T2
+R47
+Z60 DEx4 work 11 reg_out_sda 0 22 ZkBmW`ITE[OH=;Lj1JNzI3
+R35
+R53
+R2
+R3
+R4
+R5
+Z61 DEx4 work 12 interfaz_i2c 0 22 9S10W=32lFhmHMlj_znbj0
+!i122 40
+l74
+L58 76
+VCLDm_EEHl[<DnUH[_8==62
+!s100 kOg7@_dg[GFlj5L3]91oP1
+R9
+32
+R24
+!i10b 1
+R25
+R57
+R58
+!i113 1
+R13
+R14
+Emonitor_bus_i2c
+Z62 w1488198722
+R2
+R3
+R4
+R5
+!i122 33
+R6
+Z63 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_bus_i2c.vhd
+Z64 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_bus_i2c.vhd
+l0
+L9 1
+VW>?Qz?gW77Q`aV@MDJcZ]3
+!s100 E=H0E93:S2bXk`5D^nHEK1
+R9
+32
+R24
+!i10b 1
+R25
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_bus_i2c.vhd|
+Z66 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_bus_i2c.vhd|
+!i113 1
+R13
+R14
+Asim
+R2
+R3
+R4
+R5
+Z67 DEx4 work 15 monitor_bus_i2c 0 22 W>?Qz?gW77Q`aV@MDJcZ]3
+!i122 33
+l41
+L15 150
+VB2Y:W:i20eaiI2=l;k@[G3
+!s100 _T7TN@YSGi3JLK6Mei?G51
+R9
+32
+R24
+!i10b 1
+R25
+R65
+R66
+!i113 1
+R13
+R14
+Emonitor_slave_i2c
+Z68 w1488198702
+R1
+R2
+R3
+R4
+R5
+!i122 34
+R6
+Z69 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_slave_i2c.vhd
+Z70 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_slave_i2c.vhd
+l0
+L53 1
+V1BmN3WfIDUb]gPO]Hl_6i1
+!s100 _m<6=EAF6WCUF1Az:j^3B0
+R9
+32
+R24
+!i10b 1
+R25
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_slave_i2c.vhd|
+Z72 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/monitor_slave_i2c.vhd|
+!i113 1
+R13
+R14
+Asim
+R1
+R2
+R3
+R4
+R5
+R16
+!i122 34
+l69
+L68 48
+ViRgPV5o`ngH91GEBjCllT1
+!s100 ^gj9ki<i598SLlQIc]j]=3
+R9
+32
+R24
+!i10b 1
+R25
+R71
+R72
+!i113 1
+R13
+R14
+Ppack_agente_slave_i2c
+R4
+R5
+!i122 35
+Z73 w1488198690
+R6
+Z74 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/pack_agente_slave_i2c.vhd
+Z75 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/pack_agente_slave_i2c.vhd
+l0
+L8 1
+VGGU6X[37kOZb9jSGCT@SJ1
+!s100 0KhlS@Gz]VXBk34aWRf<z3
+R9
+32
+b1
+R24
+!i10b 1
+R25
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/pack_agente_slave_i2c.vhd|
+Z77 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/pack_agente_slave_i2c.vhd|
+!i113 1
+R13
+R14
+Bbody
+R1
+R2
+R3
+R4
+R5
+!i122 35
+l0
+L91 1
+V_YPW`zkLLY5@L:>kT7j<=2
+!s100 ``RmhGhHAh5daI;KBV6T=3
+R9
+32
+R24
+!i10b 1
+R25
+R76
+R77
+!i113 1
+R13
+R14
+Ereg_in_sda
+Z78 w1648726746
+R2
+R3
+R4
+R5
+!i122 28
+R6
+Z79 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_in_SDA.vhd
+Z80 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_in_SDA.vhd
+l0
+L38 1
+V>Z<U:4EBSAG6@KC^^`W6T2
+!s100 TDDH;?I`[dkk1fWO5hjIO2
+R9
+32
+R31
+!i10b 1
+R32
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_in_SDA.vhd|
+Z82 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_in_SDA.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+R59
+!i122 28
+l50
+L48 20
+V9:RW7zz?82R_LVZHOPD6c0
+!s100 7Z7_gXgobla[>m7:J9iz51
+R9
+32
+R31
+!i10b 1
+R32
+R81
+R82
+!i113 1
+R13
+R14
+Ereg_out_sda
+Z83 w1648808889
+R2
+R3
+R4
+R5
+!i122 29
+R6
+Z84 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_out_SDA.vhd
+Z85 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_out_SDA.vhd
+l0
+L48 1
+VZkBmW`ITE[OH=;Lj1JNzI3
+!s100 IWIKD^0XC6FjMR`ED1^m73
+R9
+32
+R24
+!i10b 1
+R32
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_out_SDA.vhd|
+Z87 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/hdl/reg_out_SDA.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+R60
+!i122 29
+l64
+L60 32
+VANF>MLAnZIgbW6g[WMTb01
+!s100 mWIgogh?j<YF`Be]XEIGf0
+R9
+32
+R24
+!i10b 1
+R32
+R86
+R87
+!i113 1
+R13
+R14
+Eresponder_slave_i2c
+Z88 w1488198658
+R1
+R2
+R3
+R4
+R5
+!i122 36
+R6
+Z89 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/responder_slave_i2c.vhd
+Z90 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/responder_slave_i2c.vhd
+l0
+L40 1
+VR[DbUGgZ4CKJ0SP[0kHlN3
+!s100 RmkmgYX73MKKPKQh8_bNQ1
+R9
+32
+R24
+!i10b 1
+R25
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/responder_slave_i2c.vhd|
+Z92 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/responder_slave_i2c.vhd|
+!i113 1
+R13
+R14
+Asim
+R1
+R2
+R3
+R4
+R5
+R18
+!i122 36
+l59
+L51 89
+VBU4AIaL?HKnA2mTDN]Fm40
+!s100 Y`B^G;M_gziF[Qzjn9FOC1
+R9
+32
+R24
+!i10b 1
+R25
+R91
+R92
+!i113 1
+R13
+R14
+Esecuenciador_interfaz_i2c
+Z93 w1517310584
+R1
+R2
+R3
+R4
+R5
+!i122 37
+R6
+Z94 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/secuenciador_interfaz_i2c.vhd
+Z95 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/secuenciador_interfaz_i2c.vhd
+l0
+Z96 L17 1
+V;lnSZP@<HkniXL9]CAJS80
+!s100 IcWdGO?HO=]UkLP^akM?h0
+R9
+32
+R24
+!i10b 1
+R25
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/secuenciador_interfaz_i2c.vhd|
+Z98 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/secuenciador_interfaz_i2c.vhd|
+!i113 1
+R13
+R14
+Asim
+R1
+R2
+R3
+R4
+R5
+Z99 DEx4 work 25 secuenciador_interfaz_i2c 0 22 ;lnSZP@<HkniXL9]CAJS80
+!i122 37
+l33
+L32 66
+V^4cnDV>o]>Za18T5PkOH10
+!s100 N_GjK^X@439VZM3`JKHY]0
+R9
+32
+R24
+!i10b 1
+R25
+R97
+R98
+!i113 1
+R13
+R14
+Esequencer_slave_i2c
+Z100 w1488198760
+R1
+R2
+R3
+R4
+R5
+!i122 38
+R6
+Z101 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/sequencer_slave_i2c.vhd
+Z102 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/sequencer_slave_i2c.vhd
+l0
+L30 1
+VbSN@BMc7mZd4_U::gJ[263
+!s100 lo6??Qd>iCna3ZilED?`93
+R9
+32
+R24
+!i10b 1
+R25
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/sequencer_slave_i2c.vhd|
+Z104 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/sequencer_slave_i2c.vhd|
+!i113 1
+R13
+R14
+Asim
+R1
+R2
+R3
+R4
+R5
+R15
+!i122 38
+l44
+L43 48
+VbNbUThL@g4:^gz]l:CZ]>0
+!s100 7IZLkTaUJ1X;@`a04l@3N0
+R9
+32
+R24
+!i10b 1
+R25
+R103
+R104
+!i113 1
+R13
+R14
+Etest_basico_interfaz_i2c
+Z105 w1519322428
+R1
+R2
+R3
+R4
+R5
+!i122 39
+R6
+Z106 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/test_basico_interfaz_i2c.vhd
+Z107 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/test_basico_interfaz_i2c.vhd
+l0
+R96
+VCXOVejb^i2E5EYC9;VjB@3
+!s100 LYTakjnK5V;NY@<3[3B:00
+R9
+32
+R24
+!i10b 1
+R25
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/test_basico_interfaz_i2c.vhd|
+Z109 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/TEST/test_basico_interfaz_i2c.vhd|
+!i113 1
+R13
+R14
+Atest
+R19
+R67
+R99
+R41
+R61
+R1
+R2
+R3
+R4
+R5
+DEx4 work 24 test_basico_interfaz_i2c 0 22 CXOVejb^i2E5EYC9;VjB@3
+!i122 39
+l38
+L20 64
+V?a;RdiQ`9LHT<mj<CBTXf1
+!s100 f`if3aAhBCibAW9Pgh]Zg3
+R9
+32
+R24
+!i10b 1
+R25
+R108
+R109
+!i113 1
+R13
+R14
+Etest_gen_scl
+Z110 w1489494464
+R2
+R3
+R4
+R5
+!i122 24
+R6
+Z111 8/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/test_gen_SCL.vhd
+Z112 F/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/test_gen_SCL.vhd
+l0
+L60 1
+V9AWM9HzYNz@XN=M1QP?oM2
+!s100 CJO4[N`Y>z^lMzzO:iTSA2
+R9
+32
+R31
+!i10b 1
+R32
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/test_gen_SCL.vhd|
+Z114 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/MEDTH  A1/hdl/I2C/modelsim/test_gen_SCL.vhd|
+!i113 1
+R13
+R14
+Atest
+R53
+R2
+R3
+R4
+R5
+DEx4 work 12 test_gen_scl 0 22 9AWM9HzYNz@XN=M1QP?oM2
+!i122 24
+l88
+L63 277
+V<_TMR`DDf[]ASID4oh^Ka3
+!s100 Zbb>oMKUDPNiOTm46e:JM3
+R9
+32
+R31
+!i10b 1
+R32
+R113
+R114
+!i113 1
+R13
+R14

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Mar 16 15:52:48 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : gen_SCL
+Top-level Entity Name : gen_SCL
+Family : MAX 10
+Total logic elements : 27
+    Total combinational functions : 27
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

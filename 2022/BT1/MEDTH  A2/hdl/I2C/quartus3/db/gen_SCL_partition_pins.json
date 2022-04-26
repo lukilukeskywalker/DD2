@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ena_out_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "ena_in_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "ena_stop_i2c",
+					"strict" : false
+				},
+				{
+					"name" : "ena_start_i2c",
+					"strict" : false
+				},
+				{
+					"name" : "SCL_up",
+					"strict" : false
+				},
+				{
+					"name" : "SCL",
+					"strict" : false
+				},
+				{
+					"name" : "ena_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nRst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
