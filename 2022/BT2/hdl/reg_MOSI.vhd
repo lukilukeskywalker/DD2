@@ -33,7 +33,7 @@ begin
 					tx_buffer(15 downto 8) <= dato_wr;
 				end if;
 			elsif tx_MOSI = '1' then 
-				tx_buffer<=tx_buffer(15 downto 0)&'1';
+				tx_buffer<=tx_buffer(15 downto 0)&'0';
 			end if;
 		end if;
 	end process MOSI_proc;

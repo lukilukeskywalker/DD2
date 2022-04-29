@@ -6,6 +6,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
+use work.pack_test_interfaz_spi.all;
+
 entity test_interfaz_spi is
 end entity;
 
@@ -17,13 +19,13 @@ architecture test of test_interfaz_spi is
 	signal SDI:		std_logic;
 	signal SDO:		std_logic;
 
-	signal data_in:	std_logic_vector(3 downto 0);
+	signal data_in:	std_logic_vector(7 downto 0);
 
-	signal tic_100ns:	std_logic;
+	signal tic_200ns:	std_logic;	
 
 
-	constant T_CLK: time:= 20 ns;
-	constant T_CLK100:	time:= 100 ns;
+	constant T_CLK: 	time:= 20 ns;
+	constant T_CLK5:	time:= 200 ns;
 
 begin
 dut: entity work.interfaz_spi(estructural)
@@ -45,14 +47,14 @@ begin
 end process;
 
 
--- Generacion reloj de 100 ns (10 MHz)
+-- Generacion reloj de 200 ns (5 MHz)
 process
 begin
-	wait for T_CLK100/2;
-	tic_100ns <= '0';
+	wait for T_CLK5/2;
+	tic_200ns <= '0';
 	
-	wait for T_CLK100/2;
-	tic_100ns <= '1';
+	wait for T_CLK5/2;
+	tic_200ns <= '1';
 end process;
 
 
@@ -74,94 +76,30 @@ begin
 
 	-- Comprobacion del funcionamiento del Master-SPI
 	-- Transaccion de escritura
-	nCS <= '0';				-- El primer bit indica que se produce una transaccion de escritura en el registro de control CTRL_REG6
-	data_in <= X"25";		-- Valor en binario: 0010 0101		Valor en decimal: 37
-	wait for 8*T_CLK100;
-	wait until clk'event and tic_100ns'event and clk = '1'; 
-
-	data_in <= X"AD";		-- Valor en binario: 1010 1101		Valor en decimal: 173
-	wait for 8*T_CLK100;
-	wait until tic_100ns'event and tic_100ns = '1';
-	nCS <= '1';
+	transaccion_escritura(clk, nCS, tic_200ns, data_in, X"25", X"AD");
 
 	-- Esperamos 50 ciclos de reloj
 	wait for 50*T_CLK;
 	wait until clk'event and clk = '1';
 
-	-- Mismo proceso anterior para la:
 	-- Introduccion de otros 4 datos en los registros CTRL_REG5 hasta CRTL_REG2
-	--**********************************************************************************
-	-- En CTRL_REG5
-	nCS <= '0';				
-	data_in <= X"24";		-- Valor en binario: 0010 0100		Valor en decimal: 36
-	wait for 8*T_CLK100;
-	wait until clk'event and tic_100ns'event and clk = '1'; 
-
-	data_in <= X"FF";		-- Valor en binario: 1111 1111		Valor en decimal: 255
-	wait for 8*T_CLK100;
-	wait until tic_100ns'event and tic_100ns = '1';
-	nCS <= '1';
-
-	wait for 50*T_CLK;
-	wait until clk'event and clk = '1';
-
-	-- En CTRL_REG4
-	nCS <= '0';				
-	data_in <= X"23";		-- Valor en binario: 0010 0100		Valor en decimal: 35
-	wait for 8*T_CLK100;
-	wait until clk'event and tic_100ns'event and clk = '1'; 
-
-	data_in <= X"0";		-- Valor en binario: 0000 0000		Valor en decimal: 0
-	wait for 8*T_CLK100;
-	wait until tic_100ns'event and tic_100ns = '1';
-	nCS <= '1';
-
-	wait for 50*T_CLK;
-	wait until clk'event and clk = '1';
-
-	-- En CTRL_REG3
-	nCS <= '0';				
-	data_in <= X"22";		-- Valor en binario: 0010 0011		Valor en decimal: 34
-	wait for 8*T_CLK100;
-	wait until clk'event and tic_100ns'event and clk = '1'; 
-
-	data_in <= X"56";		-- Valor en binario: 0101 0110		Valor en decimal: 86
-	wait for 8*T_CLK100;
-	wait until tic_100ns'event and tic_100ns = '1';
-	nCS <= '1';
-
-
-	wait for 50*T_CLK;
-	wait until clk'event and clk = '1';
-
-	-- En CTRL_REG2
-	nCS <= '0';				
-	data_in <= X"21";		-- Valor en binario: 0010 0001		Valor en decimal: 33
-	wait for 8*T_CLK100;
-	wait until clk'event and tic_100ns'event and clk = '1'; 
-
-	data_in <= X"2F";		-- Valor en binario: 0010 1111		Valor en decimal: 47
-	wait for 8*T_CLK100;
-	wait until tic_100ns'event and tic_100ns = '1';
-	nCS <= '1';
-	
-	--**********************************************************************************
+	transaccion_escritura(clk, nCS, tic_200ns, data_in, X"24", X"FF");
+	transaccion_escritura(clk, nCS, tic_200ns, data_in, X"23", X"00");
+	transaccion_escritura(clk, nCS, tic_200ns, data_in, X"22", X"56");
+	transaccion_escritura(clk, nCS, tic_200ns, data_in, X"21", X"2F");
 
 	-- Esperamos 25 ciclos de reloj
-
-	-- Transaccion de lectura
-	nCS <= '0';
-	data_in <= X"A4";	-- La lectura empieza en el registro CTRL_REG5	Valor en binario: 1010 0100   	Valor en decimal: 164
+	wait for 25*T_CLK;
 	
-	for i in 0 to 40 loop
-	wait until T_CLK100'event and T_CLK100 = '1';
-	end loop;
+	-- Transaccion de lectura
+	transaccion_lectura(clk, nCS, tic_200ns, data_in, X"A4");
 
 	-- Esperamos 100 ciclos de reloj
 	wait for 100*T_CLK;
 
 	assert false report "*******************************FIN DEL TEST*******************************" severity failure;
-
-
 end process;
 end test;
+
+
+
