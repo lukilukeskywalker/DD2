@@ -22,17 +22,17 @@ end entity gen_SCK;
 architecture rtl of gen_SCK is
 constant SPI_SCL_PERIOD : natural := 10; --generamos un tic cada 5 Mhz
 constant SPI_SCL_H: natural := 5;
-constant SPI_tx: natural := 1; --Punto en el que tiene que transmitir;
 constant cnt_16: natural := 16; -- fin de cuenta para operacion de escritura
 constant cnt_40: natural := 40; -- fin de cuenta para operacion de lectura
 
- 
+  -- Maquina de estados
+	type state_machine is (init, proc_byte);--direccion, proc_byte);
+	signal estado: state_machine;
 
   -- Cuenta para generacion de SC y salidas
-  	signal f_cnt_16:		std_logic;
-  	signal f_cnt_40:		std_logic;
-  	signal cnt_SCK:        std_logic_vector(3 downto 0);	--Cntador divisor de frecuencia para SCK
-  	signal cnt_periods: 	std_logic_vector(5 downto 0);	--Contador de pulsos de reloj 
+	signal nWR_int:			std_logic;						--Bit interno de registro para nWR, para que no se pueda modificar mientras se produce la transmision
+  	signal cnt_SCK:        std_logic_vector(3 downto 0):="1010";	--Cntador divisor de frecuencia para SCK
+  	signal cnt_periods: 	std_logic_vector(5 downto 0):="000000";	--Contador de pulsos de reloj 
 	signal ena_rd_i:		std_logic_vector(1 downto 0);	--Registro intermedio para conformador de pulso de ena_rd
 	--signal cnt_MISO_reg: std_logic_vector 3 downto 0);		--Contador 
 begin
@@ -79,7 +79,7 @@ SCK <= CS when cnt_SCK <= SPI_SCL_H else
 
 -- Generacion de ena_rd que habilita la lectura del buffer dato_rd desde reg_MISO en calc_offset
 	--Conformador de pulso ena_rd
-	conformador_ena_rd_proc: process(nRst, clk)
+	conformador_ena_rd_proc: process(nRst, clk) --Comentario adicional. Se podria hacer con la maquina de estados, añadiendo un estado mas? SI... si se podria hacer... se necesita? no
 	begin
 		if(nRst = '0') then 
 			ena_rd_i(1) <= '1';	--A 1 para que no se produzca al inicio un falso ena_rd
@@ -89,29 +89,37 @@ SCK <= CS when cnt_SCK <= SPI_SCL_H else
 	end process conformador_ena_rd_proc;
 	ena_rd_i(0) <= '1' when ((cnt_periods(2 downto 0) = 0) and (cnt_periods(5 downto 4) /= 0)) else
 			'0';
-	ena_rd <= '1' when ena_rd_i(0) = '1' and ena_rd_i(1) = '0' else
+	ena_rd <= nWR_int when ena_rd_i(0) = '1' and ena_rd_i(1) = '0' else
 				'0';
 
---	ena_rd_proc: process(nRst, clk)
---	begin
---		if(nRst = '0') then
---			cnt_MISO_reg <= (others => '0');
---		elsif(clk'event and clk='1') then
---			if(capt_miso = '1') then
---				if cnt_MISO_reg = 8 then
---					cnt_MISO_reg <= (others => '0');
---				else
---					cnt_MISO_reg <= cnt_MISO_reg +1;
---				end if;
---			end if;
---		end if;
---	end process ena_rd_proc;
-	
---	ena_rd <= not CS when cnt_MISO_reg = 8 else
---		0;*/
+-- Proceso de Maquina de estados
+	estado_proc : process(nRst, clk)
+	begin
+		if(nRst = '0') then
+			estado <= init;
+		elsif(clk'event and clk = '1') then
+			case estado is
+				when init =>
+					if(ini = '1') then	
+						--estado <= direccion;
+						estado <= proc_byte;
+						nWR_int <= nWR;
+					end if;
+				--when direccion =>		--Ya se ocupa mi sistema de ena_rd (que comprueba si es 16, 24, 32 o 40 en cnt_periods)
+				--	if(ena_rd_i(0) = '1') then
+				--		estado <= proc_byte;
+				--	end if;
+				when proc_byte =>
+					if(nWR_int = '0' and cnt_periods = 16) or (nWR_int = '1' and cnt_periods = 40) then
+						estado <= init;
+					end if;
+			end case;
+		end if;
+	end process estado_proc;
 
 
-CS <= '0';
+CS <= '1' when estado = init else
+		'0';
 
 
 

@@ -10,6 +10,9 @@ architecture test of test_SCK is
 	
 	signal clk: std_logic;
 	signal nRst: std_logic;
+	
+	signal ini: std_logic;
+	signal nWR: std_logic;
 
 	signal capt_miso: std_logic;
 	signal tx_mosi: std_logic;
@@ -25,6 +28,8 @@ begin
 	dut: entity Work.gen_SCK(rtl)
 		port map(clk => clk,
 				nRst => nRst,
+				ini => ini,
+				nWR => nWR,
 				capt_miso => capt_miso,
 				tx_mosi => tx_mosi,
 				ena_rd => ena_rd,
@@ -54,6 +59,22 @@ begin
   	wait until clk'event and clk = '1';
   	nRst <= '1';                         -- Reset inactivo
   	--Fin de secuencia de reset
+	wait for 2 us;
+	nWR <= '0';
+	wait until clk'event and clk = '1';
+	ini <= '1';
+	wait until clk'event and clk = '1';
+	ini <= '0';
+	nWR <= '1';
+	wait for 6 us;
+	ini <= '1';
+	wait until clk'event and clk = '1';
+	ini <= '0';
+	wait for 4 us;
+	nWR <= '0';
+	wait for 5 us;
+	ini <= '1';
+	
   	wait;
 	
 end process nRst_proc;
