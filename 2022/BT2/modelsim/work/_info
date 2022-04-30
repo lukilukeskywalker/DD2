@@ -77,24 +77,24 @@ R8
 R11
 R12
 Egen_sck
-Z15 w1651257461
+Z15 w1651354566
 R14
 Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R0
 R1
-!i122 50
+!i122 58
 R3
 Z17 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/gen_SCK.vhd
 Z18 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/gen_SCK.vhd
 l0
 L6 1
-V>MIhV@RJhEnENh?J7h4]L0
-!s100 0H>^4EHTXhVM6z[21_BRd1
+Vgi0ci;ABL8A:fZA9;amTD3
+!s100 h9>:njY]`1h<4Fii48X1b2
 R6
 32
-Z19 !s110 1651257472
+Z19 !s110 1651357504
 !i10b 1
-Z20 !s108 1651257472.000000
+Z20 !s108 1651357504.000000
 Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/gen_SCK.vhd|
 Z22 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/gen_SCK.vhd|
 !i113 1
@@ -105,12 +105,12 @@ R14
 R16
 R0
 R1
-Z23 DEx4 work 7 gen_sck 0 22 >MIhV@RJhEnENh?J7h4]L0
-!i122 50
-l38
-L22 106
-V0h1N5;h?Cg3]Ii@?m>Jeg2
-!s100 BH9KV0`M9Xke]Bo2l4ha>3
+Z23 DEx4 work 7 gen_sck 0 22 gi0ci;ABL8A:fZA9;amTD3
+!i122 58
+l37
+L22 103
+VTmRPMUB5mo?lY=CV<h2ek0
+!s100 1XN8DH5TFakAlj]g2ZVKK2
 R6
 32
 R19
@@ -121,41 +121,44 @@ R22
 !i113 1
 R11
 R12
-Ereg_miso
-Z24 w1650924597
+Emaster_spi
+Z24 w1651357921
 R14
 R16
 R0
 R1
-!i122 39
+!i122 61
 R3
-Z25 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd
-Z26 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd
+Z25 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI.vhd
+Z26 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI.vhd
 l0
-L9 1
-VQ9Db8^XlPI5IA@@_:HEQc2
-!s100 3]@99PzH0FAhA2i@X2^b^2
+L6 1
+V]VWS`LfEKiUC<DaGCn]040
+!s100 0<0U0MnCln[RQe@b10E<z2
 R6
 32
-Z27 !s110 1651189355
+Z27 !s110 1651357925
 !i10b 1
-Z28 !s108 1651189355.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd|
-Z30 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd|
+Z28 !s108 1651357925.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI.vhd|
+Z30 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI.vhd|
 !i113 1
 R11
 R12
-Artl
+Aestructural
+Z31 DEx4 work 8 reg_miso 0 22 aV9da]14IQ50RLb:mgL`X0
+Z32 DEx4 work 8 reg_mosi 0 22 a[CB=U9zf365:=mFlVhO40
+R23
 R14
 R16
 R0
 R1
-DEx4 work 8 reg_miso 0 22 Q9Db8^XlPI5IA@@_:HEQc2
-!i122 39
-l19
-L18 14
-VK2zAZ_>]l=8QBdSiLTbo;0
-!s100 T3jC51We[Z]WaM5SVzOF^1
+DEx4 work 10 master_spi 0 22 ]VWS`LfEKiUC<DaGCn]040
+!i122 61
+l32
+L28 36
+Vo2:jg;_B@bK@5mPb6KT]@2
+!s100 M=2gF<B<IzD7D?_A=_:E63
 R6
 32
 R27
@@ -166,27 +169,27 @@ R30
 !i113 1
 R11
 R12
-Ereg_mosi
-Z31 w1651069352
+Ereg_miso
+Z33 w1651357361
 R14
 R16
 R0
 R1
-!i122 40
+!i122 56
 R3
-Z32 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd
-Z33 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd
+Z34 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd
+Z35 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd
 l0
 L9 1
-VCF1f6;=iLeNGP1ShO7RUk2
-!s100 `>?9@VQXdd^nAN7bGe2IN3
+VaV9da]14IQ50RLb:mgL`X0
+!s100 iBHlH>=H;ZiION5HHb2=>0
 R6
 32
-R27
+Z36 !s110 1651357494
 !i10b 1
-R28
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd|
-Z35 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd|
+Z37 !s108 1651357494.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd|
+Z39 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MISO.vhd|
 !i113 1
 R11
 R12
@@ -195,19 +198,64 @@ R14
 R16
 R0
 R1
-DEx4 work 8 reg_mosi 0 22 CF1f6;=iLeNGP1ShO7RUk2
-!i122 40
+R31
+!i122 56
+l19
+L18 14
+V7hZW]jOMF68QgoK3[dVbE0
+!s100 `oOCBTMQS<0eklT:dd=S61
+R6
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R11
+R12
+Ereg_mosi
+Z40 w1651357389
+R14
+R16
+R0
+R1
+!i122 57
+R3
+Z41 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd
+Z42 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd
+l0
+L9 1
+Va[CB=U9zf365:=mFlVhO40
+!s100 mCE^9cWA8e=nSdLYW3jgG3
+R6
+32
+Z43 !s110 1651357499
+!i10b 1
+Z44 !s108 1651357499.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd|
+Z46 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/reg_MOSI.vhd|
+!i113 1
+R11
+R12
+Artl
+R14
+R16
+R0
+R1
+R32
+!i122 57
 l22
 L20 23
 VmV:@cS]jECkb0>`kH9DS32
 !s100 RLSm0B1[<Q<@21miIha]I3
 R6
 32
-R27
+R43
 !i10b 1
-R28
-R34
-R35
+R44
+R45
+R46
 !i113 1
 R11
 R12
@@ -236,26 +284,26 @@ R6
 R11
 R12
 Etest_sck
-Z36 w1651258017
+Z47 w1651358000
 R14
 R16
 R0
 R1
-!i122 54
+!i122 63
 R3
-Z37 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
-Z38 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
+Z48 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
+Z49 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
 l0
 L6 1
 V7CER2_MTVekeXcl_?D`]c0
 !s100 h92iiGAf1a2DejeRYn8`G2
 R6
 32
-Z39 !s110 1651258021
+Z50 !s110 1651358003
 !i10b 1
-Z40 !s108 1651258021.000000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
-Z42 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
+Z51 !s108 1651358003.000000
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
+Z53 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
 !i113 1
 R11
 R12
@@ -265,19 +313,19 @@ R14
 R16
 R0
 R1
-Z43 DEx4 work 8 test_sck 0 22 7CER2_MTVekeXcl_?D`]c0
-!i122 54
+Z54 DEx4 work 8 test_sck 0 22 7CER2_MTVekeXcl_?D`]c0
+!i122 63
 l27
-Z44 L9 73
-V0HCznNSgO5HboaHC_496O3
-!s100 eAUE;RD>V3RclX8^Mc<:M0
+Z55 L9 73
+VQ20WmhKSYVJMH[NW=CV6X3
+!s100 PVYB_OnMAc7J29CmTJ?Ba2
 R6
 32
-R39
+R50
 !i10b 1
-R40
-R41
-R42
+R51
+R52
+R53
 !i113 1
 R11
 R12

@@ -10,7 +10,7 @@ entity reg_MISO is
 	port(clk:	in	std_logic;
 		nRst:	in	std_logic;
 		MISO:	in	std_logic;
-		capt_MISO: in	std_logic;
+		rd_MISO: in	std_logic;
 		dato_rd: buffer	std_logic_vector(7 downto 0)
 	);
 end entity;
@@ -23,7 +23,7 @@ begin
 		if nRst = '0' then
 			dato_rd <= (others => '0');
 		elsif clk'event and clk = '1' then
-			if capt_MISO = '1' then 
+			if rd_MISO = '1' then 
 				dato_rd(7 downto 0) <= dato_rd(6 downto 0)& MISO;
 			end if;
 		end if;

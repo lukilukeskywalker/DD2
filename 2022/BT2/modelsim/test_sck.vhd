@@ -14,7 +14,7 @@ architecture test of test_SCK is
 	signal ini: std_logic;
 	signal nWR: std_logic;
 
-	signal capt_miso: std_logic;
+	signal rd_miso: std_logic;
 	signal tx_mosi: std_logic;
 	signal ena_rd: std_logic;
 	signal CS: std_logic;
@@ -30,7 +30,7 @@ begin
 				nRst => nRst,
 				ini => ini,
 				nWR => nWR,
-				capt_miso => capt_miso,
+				rd_miso => rd_miso,
 				tx_mosi => tx_mosi,
 				ena_rd => ena_rd,
 				CS => CS,

@@ -6,5 +6,8 @@ transcript
 *.qpf
 *.qws
 .swp
+*.qpg
+*.qtl
+*.qdb
 Notas.xls
 Legado

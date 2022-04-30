@@ -9,11 +9,11 @@ use ieee.std_logic_unsigned.all;
 entity reg_MOSI is
 	port(clk: 	in 	std_logic;
 		nRst:	in	std_logic;
-		MOSI:	buffer std_logic;
-		tx_MOSI: in	std_logic;
 		dir: 	in	std_logic;
 		set_dato: in std_logic;
-		dato_wr: buffer std_logic_vector(7 downto 0)
+		dato_wr: in std_logic_vector(7 downto 0);
+		tx_MOSI: in	std_logic;
+		MOSI:	buffer std_logic
 	);
 end entity;
 
