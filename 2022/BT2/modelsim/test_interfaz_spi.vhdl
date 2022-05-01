@@ -1,6 +1,6 @@
 -- Autor: Hao Feng
 -- Fecha: 26-April-2022
--- V.2
+-- V.3
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -21,7 +21,7 @@ architecture test of test_interfaz_spi is
 	signal ini:		std_logic;
 	signal nWR:		std_logic;
 
-	signal dir:		std_logic;
+	signal dir:			std_logic;
 	signal set_dato:	std_logic;
 
 	signal data_in:		std_logic_vector(7 downto 0);
@@ -90,13 +90,15 @@ begin
 	wait for 10*T_CLK;
 	wait until clk'event and clk = '1';
 
+
+
 	-- Comprobacion del funcionamiento del Master-SPI
 	-- Transaccion de escritura
 	nCS <= '0';
 	data_in <= X"25";
 	dir <= '0';
-	ini <= '1';
-	nWR <= '0';	--*********************************************
+	set_dato <= '1';
+	nWR <= '0';
 	ini <= '1';
 	wait until clk'event and clk = '1'; 
 	ini <= '0';
@@ -108,6 +110,7 @@ begin
 	wait for 8*T_CLK5;
 	wait until clk'event and clk = '1';
  
+	set_dato <= '0';
 	nCS <= '1';
 
 	wait for 20*T_CLK;
@@ -117,11 +120,14 @@ begin
 	wait for 50*T_CLK;
 	wait until clk'event and clk = '1';
 
+
+
 	-- Introduccion de otros 4 datos en los registros CTRL_REG5 hasta CRTL_REG2
 	nCS <= '0';
 	data_in <= X"24";
 	dir <= '0';
-	nWR <= '0';	--*********************************************
+	set_dato <= '1';
+	nWR <= '0';	
 	ini <= '1';
 	wait until clk'event and clk = '1'; 
 	ini <= '0';
@@ -134,6 +140,7 @@ begin
 	wait until clk'event and clk = '1';
  
 	nCS <= '1';
+	set_dato <= '0';
 
 	wait for 20*T_CLK;
 	wait until clk'event and clk = '1';
@@ -143,7 +150,8 @@ begin
 	nCS <= '0';
 	data_in <= X"23";
 	dir <= '0';
-	nWR <= '0';	--*********************************************
+	set_dato <= '1';
+	nWR <= '0';	
 	ini <= '1';
 	wait until clk'event and clk = '1'; 
 	ini <= '0';
@@ -156,6 +164,7 @@ begin
 	wait until clk'event and clk = '1';
  
 	nCS <= '1';
+	set_dato <= '0';
 
 	wait for 20*T_CLK;
 	wait until clk'event and clk = '1';
@@ -165,7 +174,8 @@ begin
 	nCS <= '0';
 	data_in <= X"22";
 	dir <= '0';
-	nWR <= '0';	--*********************************************
+	set_dato <= '1';
+	nWR <= '0';	
 	ini <= '1';
 	wait until clk'event and clk = '1'; 
 	ini <= '0';
@@ -178,6 +188,7 @@ begin
 	wait until clk'event and clk = '1';
  
 	nCS <= '1';
+	set_dato <= '0';
 
 	wait for 20*T_CLK;
 	wait until clk'event and clk = '1';
@@ -187,7 +198,8 @@ begin
 	nCS <= '0';
 	data_in <= X"21";
 	dir <= '0';
-	nWR <= '0';	--*********************************************
+	set_dato <= '1';
+	nWR <= '0';	
 	ini <= '1';
 	wait until clk'event and clk = '1'; 
 	ini <= '0';
@@ -200,6 +212,7 @@ begin
 	wait until clk'event and clk = '1';
  
 	nCS <= '1';
+	set_dato <= '0';
 
 	wait for 20*T_CLK;
 	wait until clk'event and clk = '1';
@@ -207,12 +220,15 @@ begin
 	-- Esperamos 25 ciclos de reloj
 	wait for 25*T_CLK;
 	
+		
+		
+		
 	-- Transaccion de lectura
 
 	nCS <= '0';
 	data_in <= X"A4";
 	dir <= '0';
-	nWR <= '1';	--*********************************************
+	nWR <= '1';	
 	ini <= '1';
 	wait until clk'event and clk = '1'; 
 	ini <= '0';
@@ -230,3 +246,4 @@ begin
 	assert false report "*******************************FIN DEL TEST*******************************" severity failure;
 end process;
 end test;
+
