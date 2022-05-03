@@ -1,5 +1,5 @@
 library work;
-use work.auxiliar.all;              -- Funcion ceil_log
+use work.auxiliar.all;              -- Funcion ceil_log,,
 
 library ieee;
 use ieee.std_logic_1164.all;

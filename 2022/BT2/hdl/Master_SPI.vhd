@@ -10,27 +10,28 @@ entity master_spi is
 	port(nRst: 	in 	std_logic;
 		clk:	in	std_logic;
 	--ENTRADAS DE CONTROL
-		ini:	in	std_logic;	--Señal de control para inicializacion
-		nWR:	in	std_logic;	--Señal de control para indicar operacion a realizar (Escritura negado/lectura)
-		--Señales para escritura en registro tx
+		ini:	in	std_logic;	--Seï¿½al de control para inicializacion
+		nWR:	in	std_logic;	--Seï¿½al de control para indicar operacion a realizar (Escritura negado/lectura)
+		--Seï¿½ales para escritura en registro tx
 		dir: 	in	std_logic;	--Introduce en que posicion del buffer de salida se debe escribir el byte que esta en dato_wr
-		set_dato: in std_logic; --Señaliza la escritura en el buffer de salida
+		set_dato: in std_logic; --Seï¿½aliza la escritura en el buffer de salida
 		--REGISTROS 
 		dato_wr: in std_logic_vector(7 downto 0);	--Registro de 8 bits para introducir bytes en el buffer de salida reg_MOSI
 		dato_rd: buffer	std_logic_vector(7 downto 0);	--Registro de 8 bits para leer bytes desde el buffer de entrada reg_MISO
 	--SALIDAS DE CONTROL
-		ena_rd:	buffer std_logic; --Señal que indica cuando hay un byte listo para la lectura
+		ena_rd:	buffer std_logic; --Seï¿½al que indica cuando hay un byte listo para la lectura
 	--SALIDAS PERIFERICO SPI	
 		MISO:	in	std_logic;
 		MOSI:	buffer std_logic; 
 		SCK:	buffer std_logic;
 		CS:		buffer std_logic
 		);	
+		
 end entity;
 
 architecture estructural of master_spi is
-	signal rd_miso:	std_logic;	--Señal para señalizar al registro MISO que capture bit
-	signal tx_mosi: std_logic;	--Señal para señalizar al registro MOSI que transmita bit
+	signal rd_miso:	std_logic;	--Seï¿½al para seï¿½alizar al registro MISO que capture bit
+	signal tx_mosi: std_logic;	--Seï¿½al para seï¿½alizar al registro MOSI que transmita bit
 
 	begin
 		U0: entity work.gen_SCK(rtl)
