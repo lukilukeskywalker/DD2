@@ -1,3 +1,8 @@
+--Autor LX0809 G4 Lukitas/Rick
+-- Fecha: 29-april-22
+-- rev 1
+
+
 --Generacion de segnal SC (f =5MHz)
 library ieee;
 use ieee.std_logic_1164.all;

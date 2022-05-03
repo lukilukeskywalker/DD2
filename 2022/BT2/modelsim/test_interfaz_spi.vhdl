@@ -81,12 +81,12 @@ begin
 	wait for 10*T_CLK;	
 	wait until clk'event and clk = '1';
 
-	nRst <= '1';
+	nRst <= '0';
 	wait for 10*T_CLK;
 	wait until clk'event and clk = '1';
 
 	-- Esperamos unos segundos tras el reset asincrono
-	nRst <= '0';
+	nRst <= '1';
 	wait for 10*T_CLK;
 	wait until clk'event and clk = '1';
 

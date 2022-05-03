@@ -1,3 +1,6 @@
+--Autor LX0809 G4 Lukitas
+-- Fecha: 30-april-22
+-- rev 1
 
 library ieee;
 use ieee.std_logic_1164.all;
