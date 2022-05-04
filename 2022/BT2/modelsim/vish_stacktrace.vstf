@@ -15,3 +15,14 @@
 # 7    0x0857ec8b: 'TclInvokeStringCommand + 0x7b' in '/home/lukilukeskywalker/.intelFPGA/20.1/modelsim_ase/linuxaloem/vish'
 # 8    0x0d9ae8eb: '<unknown (@0xd9ae8eb)>'
 # 9    0x0bf3515b: '<unknown (@0xbf3515b)>'
+# Current time Wed May  4 00:18:44 2022
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = "linuxaloem"
+# 0    0x0e1afe10: '<unknown (@0xe1afe10)>'
+# 1    0xfffffffb: '<unknown (@0xfffffffb)>'
+# End of Stack Trace
+

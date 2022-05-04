@@ -53,6 +53,7 @@ architecture estructural of master_spi is
 					set_dato => set_dato,
 					dato_wr => dato_wr,
 					tx_mosi => tx_mosi,
+					CS => CS,
 					MOSI => MOSI
 					);
 
