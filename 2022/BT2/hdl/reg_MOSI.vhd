@@ -14,6 +14,7 @@ entity reg_MOSI is
 		dato_wr: in std_logic_vector(7 downto 0);
 		tx_MOSI: in	std_logic;
 		CS: 	in std_logic;
+	     	nWR:	in std_logic;
 		MOSI:	buffer std_logic
 	);
 end entity;
@@ -31,6 +32,7 @@ begin
 												--De todas formas, no deberia poder escribirse si se esta produciendo una transmision!!!
 				if dir = '1' then
 					tx_buffer(7 downto 0) <= dato_wr;
+					nWR <= dato_wr(7);
 				else
 					tx_buffer(15 downto 8) <= dato_wr;
 				end if;
