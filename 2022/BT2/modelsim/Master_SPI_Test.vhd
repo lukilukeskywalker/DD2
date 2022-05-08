@@ -18,7 +18,7 @@ architecture test of Master_SPI_Test is
 	signal nRst: 	std_logic;
 	
 	signal ini:		std_logic;
-	signal nWR:		std_logic;
+	--signal nWR:		std_logic;
 	signal dir:		std_logic;
 	signal set_dato: std_logic;
 	signal dato_wr: std_logic_vector(7 downto 0);
@@ -39,25 +39,7 @@ architecture test of Master_SPI_Test is
 	signal pos_Y: 	std_logic_vector(1 downto 0):="00";
 
 begin
-	--reloj 50 Mhz
-	clk_proc: process
-	begin
-		clk <='0';
-		wait for T_clk/2;
-		clk <= '1';
-		wait for T_clk/2;
-	end process clk_proc;
-	--Reset Inicial
-	reset_proc: process
-	begin
-		nRst <= '1';
-		wait until clk'event and clk = '1';
-		wait until clk'event and clk = '1';
-		nRst <= '0';
-		wait until clk'event and clk = '1';
-		nRst <= '1';
-		wait;
-	end process reset_proc;
+
 	--Colocamos 2 registros, osea por tanto dos transmisiones
 	-- de 2 bytes
 	system_proc: process
@@ -74,7 +56,7 @@ begin
 		dir <= '1';
 		wait until clk'event and clk = '1';
 		set_dato <='1';
-		nWR <= '0';
+		--nWR <= '0';
 		wait until clk'event and clk = '1';
 		set_dato <='0';
 		ini <= '1';
@@ -92,7 +74,7 @@ begin
 		dir <= '1';
 		wait until clk'event and clk = '1';
 		set_dato <='1';
-		nWR <= '0';
+		--nWR <= '0';
 		wait until clk'event and clk = '1';
 		set_dato <='0';
 		ini <= '1';
@@ -100,7 +82,7 @@ begin
 		ini <=	'0';
 		wait until clk'event and CS = '1';	--Se queda esperando hasta que termina la Segunda transmision
 		wait until clk'event and clk = '1';
-		nWR <= '1';
+		--nWR <= '1';
 		dir <= '0';
 		dato_wr <= x"CA";	--Son datos random... No tengo tiempo para mirarlo... Sorry not sorry. Bueno, ya no tan random...
 		set_dato <='1';		--Escribimos la ultima direccion "La posicion de lectura del angulo"
@@ -120,13 +102,16 @@ begin
 		severity failure;
 	end process system_proc;
 
-
+	gen_clk_nRst: entity Work.test_gen_clk_nrst(sim)
+		port map(nRst => nRst,
+				clk => clk
+				);
 	
 	dut: entity Work.Master_SPI(estructural)
 		port map(clk => clk,
 				nRst => nRst,
 				ini => ini,
-				nWR => nWR,
+				--nWR => nWR,
 				dir => dir,
 				set_dato => set_dato,
 				dato_wr => dato_wr,

@@ -13,14 +13,15 @@ entity gen_SCK is
 	      	clk:		in     std_logic;
 
 			ini:		in std_logic;		--Señal de inicializacion de master SPI
-			nWR:		in std_logic;		--Señal para señalizar la operacion a realizar en el instante de ini
+			--nWR:		in std_logic;		--Señal para señalizar la operacion a realizar en el instante de ini
 											--Esta señal deberia estar conectada con el bit MSB de registro MOSI
 	      
 		  	rd_miso:	buffer std_logic;	--Señal para señalizar capturacion
 			tx_mosi:	buffer std_logic;	--Señal para señalizar transmision
 			ena_rd: 	buffer std_logic;	--Señal para señalizar byte completo en MISO_reg
 	      	CS:   		buffer std_logic;	--Chip Select
-			SCK:		buffer std_logic	--Serial Clock
+			SCK:		buffer std_logic;	--Serial Clock
+			MOSI:		in std_logic		--Master Out Slave In. Se utiliza unicamente en el primer ciclo para presetear el tipo de operacion nWR
        );
 end entity gen_SCK;
 
@@ -105,7 +106,7 @@ SCK <= CS when cnt_SCK <= SPI_SCL_H else
 					if(ini = '1') then	
 						--estado <= direccion;
 						estado <= proc_byte;
-						nWR_int <= nWR;
+						--nWR_int <= nWR;
 					end if;
 				--when direccion =>		--Ya se ocupa mi sistema de ena_rd (que comprueba si es 16, 24, 32 o 40 en cnt_periods)
 				--	if(ena_rd_i(0) = '1') then
@@ -119,9 +120,23 @@ SCK <= CS when cnt_SCK <= SPI_SCL_H else
 		end if;
 	end process estado_proc;
 
+-- Proceso de seteo de operacion nWR. Se realiza en el primer ciclo de SCK, cuando se transmite por MOSI la operacion
+-- Not fan about this solution... But hey, if it works...
+	nWR_proc : process(nRst, clk)
+	begin
+		if(nRst = '0') then 
+			nWR_int <= '0';
+		elsif(clk'event and clk = '1') then
+			if(cnt_periods = 0 and rd_miso = '1') then
+				nWR_int <= MOSI;
+			end if;
+		end if;
+	end process nWR_proc;
+			
 
 CS <= '1' when estado = init else
 		'0';
+
 
 
 

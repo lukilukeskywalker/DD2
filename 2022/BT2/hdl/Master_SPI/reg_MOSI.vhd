@@ -9,6 +9,7 @@ use ieee.std_logic_unsigned.all;
 entity reg_MOSI is
 	port(clk: 	in 	std_logic;
 		nRst:	in	std_logic;
+		--nWR: 	buffer std_logic;
 		dir: 	in	std_logic;
 		set_dato: in std_logic;
 		dato_wr: in std_logic_vector(7 downto 0);
@@ -41,5 +42,6 @@ begin
 	end process MOSI_proc;
 
 	MOSI <= tx_buffer(16);
+	
 end rtl;	
 			

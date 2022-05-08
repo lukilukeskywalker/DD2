@@ -21,13 +21,19 @@ entity controlador is
 end entity;
 
 architecture estructural of controlador is
+	signal ini: std_logic;
+	signal dir: std_logic;
+	signal set_dato: std_logic;
+	signal dato_wr: std_logic_vector(7 downto 0);
+	signal dato_rd: std_logic_vector(7 downto 0);
+	signal ena_rd: std_logic;
 
 	begin
 		master_spi: entity work.master_spi(estructural)
 			port map(nRst => nRst,
 					clk => clk,
 					ini => ini,
-					nWR => nWR,
+					--nWR => nWR,
 					dir => dir,
 					set_dato => set_dato,
 					dato_wr => dato_wr,
@@ -60,7 +66,7 @@ architecture estructural of controlador is
 			port map(nRst => nRst,
 					clk => clk,
 					ini => ini,
-					nWR => nWR,
+					--nWR => nWR,
 					dir => dir,
 					set_dato => set_dato,
 					dato_wr => dato_wr,
