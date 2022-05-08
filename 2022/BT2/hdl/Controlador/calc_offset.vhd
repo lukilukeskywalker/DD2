@@ -106,13 +106,22 @@ begin
     end if;
   end process;
 
-  offset_X <= acum_X(9+ceil_log(N))&acum_X(9+ceil_log(N) downto ceil_log(N));
-  offset_Y <= acum_Y(9+ceil_log(N))&acum_Y(9+ceil_log(N) downto ceil_log(N));
+  offset_X <= acum_X(9+ceil_log(N))&acum_X(9+ceil_log(N) downto ceil_log(N));	--Signo&division de 64 muestras 
+  offset_Y <= acum_Y(9+ceil_log(N))&acum_Y(9+ceil_log(N) downto ceil_log(N));	--Entre 32 lo que me parece todavia raro
 
-  X_out_bias <=                      when offset_rdy = '1' else  -- A completar por el estudiante
+  X_out_bias <= muestra_X + ((not offset_X) + 1) when offset_rdy = '1' else  -- A completar por el estudiante
                 (others => '0');
-  Y_out_bias <=                      when offset_rdy = '1' else  -- A completar por el estudiante
+  Y_out_bias <= muestra_Y + ((not offset_Y) + 1) when offset_rdy = '1' else  -- A completar por el estudiante
                 (others => '0');
+-- Los datos del sensor vienen en complemento a 2. 
+-- Este fichero toma 64 muestras, las va añadiendo una a una, hasta que el contador cnt_rd desborda su ultimo bit
+-- cnt_rd(7) = '1', entonces deja de añadir mas lecturas al acumulador. A partir de entonces cada vez que se lean 4
+-- registros desde el sensor, se habilita muestra_bias_rdy a 1
+-- En un combinacional se ha calculado el offset de ambos ejes
 
+-- Esto tengo que razonarlo todavia un poco, porque no veo porque solo se divide entre 32 cuando se han tomado 64 muestras
+-- Como yo lo veo, una vez tenemos las muestras "oficiales" a la muestra se le debe restar la media de lo anterior
+-- Para que sea la diferencia, de tal forma que si esta algo inclinado el sensor, pues esa diferencia de inclinacion 
+-- Se añada correctamente. el ((not offset_X/Y) + 1), es para conseguir el contrario del complemento a 2
 
 end rtl;

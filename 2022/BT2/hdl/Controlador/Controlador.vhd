@@ -11,6 +11,11 @@ use ieee.std_logic_unsigned.all;
 entity controlador is
 	port(nRst:	in	std_logic;
 		clk:	in	std_logic;
+
+	--SALIDAS Calculadora de diferencia de angulo.
+		X_out_bias: buffer	std_logic_vector(10 downto 0);
+		Y_out_bias: buffer	std_logic_vector(10 downto 0);
+		muestra_bias_rdy: buffer std_logic;	--Avisa de cuando hay una nueva muestra calculada
 		
 	--SALIDAS PERIFERICO SPI
 		MISO: in	std_logic;
@@ -27,7 +32,12 @@ architecture estructural of controlador is
 	signal dato_wr: std_logic_vector(7 downto 0);
 	signal dato_rd: std_logic_vector(7 downto 0);
 	signal ena_rd: std_logic;
+	signal tic_5ms: std_logic;
 
+	function invert (input : std_logic) return std_logic is
+	begin
+  		return not input;
+	end function;
 	begin
 		master_spi: entity work.master_spi(estructural)
 			port map(nRst => nRst,
@@ -51,7 +61,7 @@ architecture estructural of controlador is
 					ena_rd => ena_rd,
 					dato_rd => dato_rd,
 					X_out_bias => X_out_bias,
-					Y_out_bias => Y_out_bias
+					Y_out_bias => Y_out_bias,
 					muestra_bias_rdy => muestra_bias_rdy
 					);
 		--Sistema de control de SPI
@@ -70,7 +80,7 @@ architecture estructural of controlador is
 					dir => dir,
 					set_dato => set_dato,
 					dato_wr => dato_wr,
-					busy => not CS,
+					busy => invert(CS),
 					tic_5ms => tic_5ms
 					);
 		timer_5ms: entity work.timer_5ms(rtl)
@@ -78,6 +88,7 @@ architecture estructural of controlador is
 					clk => clk,
 					tic_5ms => tic_5ms
 					);
+	
 
 end estructural;
 				
