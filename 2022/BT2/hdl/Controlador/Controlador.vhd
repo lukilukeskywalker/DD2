@@ -13,9 +13,12 @@ entity controlador is
 		clk:	in	std_logic;
 
 	--SALIDAS Calculadora de diferencia de angulo.
-		X_out_bias: buffer	std_logic_vector(10 downto 0);
-		Y_out_bias: buffer	std_logic_vector(10 downto 0);
-		muestra_bias_rdy: buffer std_logic;	--Avisa de cuando hay una nueva muestra calculada
+	--	X_out_bias: buffer	std_logic_vector(10 downto 0);
+	--	Y_out_bias: buffer	std_logic_vector(10 downto 0);
+	--	muestra_bias_rdy: buffer std_logic;	--Avisa de cuando hay una nueva muestra calculada
+	--Señales de Controlador
+		dato_rd:	buffer 	std_logic_vector(7 downto 0);
+		ena_rd:		buffer	std_logic;
 		
 	--SALIDAS PERIFERICO SPI
 		MISO: in	std_logic;
@@ -30,8 +33,8 @@ architecture estructural of controlador is
 	signal dir: std_logic;
 	signal set_dato: std_logic;
 	signal dato_wr: std_logic_vector(7 downto 0);
-	signal dato_rd: std_logic_vector(7 downto 0);
-	signal ena_rd: std_logic;
+	--signal dato_rd: std_logic_vector(7 downto 0);
+	--signal ena_rd: std_logic;
 	signal tic_5ms: std_logic;
 
 	function invert (input : std_logic) return std_logic is
@@ -55,15 +58,15 @@ architecture estructural of controlador is
 					CS => CS
 					);
 		--Modulo que calcula la diferencia
-		calc_offset: entity work.calc_offset(rtl)
-			port map(nRst => nRst,
-					clk => clk,
-					ena_rd => ena_rd,
-					dato_rd => dato_rd,
-					X_out_bias => X_out_bias,
-					Y_out_bias => Y_out_bias,
-					muestra_bias_rdy => muestra_bias_rdy
-					);
+	--	calc_offset: entity work.calc_offset(rtl)
+	--		port map(nRst => nRst,
+	--				clk => clk,
+	--				ena_rd => ena_rd,
+	--				dato_rd => dato_rd,
+	--				X_out_bias => X_out_bias,
+	--				Y_out_bias => Y_out_bias,
+	--				muestra_bias_rdy => muestra_bias_rdy
+	--				);
 		--Sistema de control de SPI
 --Funcionamiento:
 --	El controlador_spi debe esperar primero 5ms, por especificacion del acel

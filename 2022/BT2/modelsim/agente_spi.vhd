@@ -106,7 +106,7 @@ begin
   else
     SDO <= '1';
     if nCS'event and nCS = '1' then
-      if cnt_rd_muestras >= 32 then
+      if cnt_rd_muestras >= 70 then
         reg_lecturas <= calcular_reg_lectura(pos_X, pos_Y); 
       
       end if;

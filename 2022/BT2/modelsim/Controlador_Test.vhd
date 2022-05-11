@@ -17,14 +17,19 @@ architecture test of Controlador_Test is
 	signal nRst:	std_logic;
 	signal pos_X:	std_logic_vector(1 downto 0);
 	signal pos_Y: 	std_logic_vector(1 downto 0);
+
+
 --SEÑALES CONTROLADOR
+	signal dato_rd: std_logic_vector(7 downto 0);
+	signal ena_rd:	std_logic;
 	signal MISO: std_logic;
 	signal MOSI: std_logic;
 	signal SCK: std_logic;
 	signal CS: std_logic;
-	signal X_out_bias: std_logic_vector(10 downto 0);
-	signal Y_out_bias: std_logic_vector(10 downto 0);
-	signal muestra_bias_rdy: std_logic;
+
+--***Controles de tiempo***
+	signal CS_t_i: time:= 0 ns;
+
 
 begin
 	gen_clk_nRst: entity Work.test_gen_clk_nrst(sim)
@@ -34,9 +39,8 @@ begin
 	dut_controlador: entity Work.controlador(estructural)
 		port map(clk => clk,
 				nRst => nRst,
-				X_out_bias => X_out_bias,
-				Y_out_bias => Y_out_bias,
-				muestra_bias_rdy => muestra_bias_rdy,
+				dato_rd => dato_rd,
+				ena_rd => ena_rd,
 				MISO => MISO,
 				MOSI => MOSI,
 				SCK => SCK,
@@ -61,4 +65,18 @@ begin
 		wait;
 	end process system_proc;
 	
+	-- Verificacion de espaciado entre transmisiones
+	CS_test_proc: process
+	begin
+		wait until CS'event and CS = '0';
+		wait until SCK'event and SCK = '1';
+		assert (not(((now - cs_t_i) < 5 ms) and MOSI = '1'))
+		report "No hay un espaciado de 5ms entre transmisiones de lectura"
+		severity error;
+		if (not((now - cs_t_i) < 5 ms) or MOSI = '0') then	--Para excepcion de escritura simultanea, una detras de otra
+			cs_t_i <= now;
+		end if;
+	end process CS_test_proc;
+
+
 end test;
