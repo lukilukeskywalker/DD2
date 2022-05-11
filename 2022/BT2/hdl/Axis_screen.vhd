@@ -1,7 +1,10 @@
 
--- Autor Lukitas
+-- Autor Lukitas/rick
 -- Fecha 04-may-22
--- rev 1
+-- rev 1.1
+--Cambios:
+--rev1: Creacion inicial
+--rev1.1: Cambio de logica de la sentencia concurrente
 
 library ieee;
 use ieee.std_logic_1164.all;
