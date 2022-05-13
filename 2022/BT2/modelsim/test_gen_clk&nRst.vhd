@@ -18,13 +18,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
-entity test_gen_clk_nRst is 
+entity nRstClk_sim is 
 	port(nRst:	buffer	std_logic;
 		clk:	buffer	std_logic
 		);
 end entity;
 
-architecture sim of test_gen_clk_nRst is
+architecture sim of nRstClk_sim is
 --CONSTANTES
 	constant T_clk: time:= 20 ns;
 --SEÑALES

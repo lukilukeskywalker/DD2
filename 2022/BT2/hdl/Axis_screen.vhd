@@ -5,6 +5,7 @@
 --Cambios:
 --rev1: Creacion inicial
 --rev1.1: Cambio de logica de la sentencia concurrente
+--rev1.2: Correcion de lo que hay que mostrar en la pantalla. Previamente mal escrito
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -26,7 +27,7 @@ begin
 	mostrador_proc: process(clk, nRst)
 	begin
 		if nRst = '0' then
-		
+			led_disp <= x"FF";
 		elsif clk'event and clk = '1' then
 			if muestra_bias_rdy = '1' then
 				case grado is
@@ -39,13 +40,13 @@ begin
 					when "0110" => led_disp <= "11111100";
 					when "0111" => led_disp <= "11111110";
 					when "1000" => led_disp <= "11111111";	--Medio
-					when "1001" => led_disp <= "00000001";
-					when "1010" => led_disp <= "00000011";
-					when "1011" => led_disp <= "00000111";
+					when "1001" => led_disp <= "01111111";
+					when "1010" => led_disp <= "00111111";
+					when "1011" => led_disp <= "00011111";
 					when "1100" => led_disp <= "00001111";
-					when "1101" => led_disp <= "00011111";
-					when "1110" => led_disp <= "00111111";
-					when "1111" => led_disp <= "01111111";	--Max
+					when "1101" => led_disp <= "00000111";
+					when "1110" => led_disp <= "00000011";
+					when "1111" => led_disp <= "00000001";	--Max
 					when others => led_disp <= x"FF";
 				
 				end case;
@@ -63,8 +64,8 @@ begin
 --						"111"; --0,086
 
 --Sorry rick, trabajo mejor de noche XD. Habia un error en mi logica de todas formas
-	grado(2 downto 0) <= "000" when (axis_media(10 downto 0) <= 17 and axis_media(11) = '0') or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 217 )) else
+	grado(2 downto 0) <= "000" when (axis_media(10 downto 0) <= 17 and axis_media(11) = '0') else--or
+								 --(axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 217 )) else --Esta seccion no se incluye porque si es menos a -217 (osea menor que -1g se apagan todos los leds, y la especificacion no indica esta posibilidad
 						"001" when  (axis_media(10 downto 0) <= 50 and axis_media(11) = '0') or
 								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 184 )) else
 						"010" when (axis_media(10 downto 0) <= 84 and axis_media(11) = '0') or

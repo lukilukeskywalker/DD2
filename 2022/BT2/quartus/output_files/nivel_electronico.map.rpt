@@ -1,0 +1,560 @@
+Analysis & Synthesis report for nivel_electronico
+Thu May 12 20:35:48 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Registers Packed Into Inferred Megafunctions
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|altsyncram_mfa1:altsyncram2
+ 15. Parameter Settings for User Entity Instance: calibrador:calibrador|calc_offset:calc_offset
+ 16. Parameter Settings for User Entity Instance: calibrador:calibrador|estimador:estimador
+ 17. Parameter Settings for Inferred Entity Instance: calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0
+ 18. altshift_taps Parameter Settings by Entity Instance
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 12 20:35:48 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; nivel_electronico                           ;
+; Top-level Entity Name              ; nivel_electronico                           ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 442                                         ;
+;     Total combinational functions  ; 411                                         ;
+;     Dedicated logic registers      ; 190                                         ;
+; Total registers                    ; 190                                         ;
+; Total pins                         ; 30                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 660                                         ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C6GES   ;                    ;
+; Top-level entity name                                            ; nivel_electronico  ; nivel_electronico  ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++-----------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                           ; Library ;
++-----------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; ../hdl/Master_SPI/reg_MISO.vhd          ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd                            ;         ;
+; ../hdl/Master_SPI/Master_SPI.vhd        ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd                          ;         ;
+; ../hdl/Master_SPI/gen_SCK.vhd           ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd                             ;         ;
+; ../hdl/Master_SPI/reg_MOSI.vhd          ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd                            ;         ;
+; ../hdl/Controlador/controlador_spi.vhdl ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl                   ;         ;
+; ../hdl/Controlador/Controlador.vhd      ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd                        ;         ;
+; ../hdl/Controlador/timer_5ms.vhd        ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd                          ;         ;
+; ../hdl/Calibrador/calibrador.vhd        ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd                          ;         ;
+; ../hdl/Calibrador/calc_offset.vhd       ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calc_offset.vhd                         ;         ;
+; ../hdl/Calibrador/auxiliar.vhd          ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/auxiliar.vhd                            ;         ;
+; ../hdl/Calibrador/estimador.vhd         ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd                           ;         ;
+; ../hdl/Axis_screen.vhd                  ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd                                    ;         ;
+; ../hdl/nivel_electronico.vhd            ; yes             ; User VHDL File               ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd                              ;         ;
+; altshift_taps.tdf                       ; yes             ; Megafunction                 ; /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/quartus/libraries/megafunctions/altshift_taps.tdf ;         ;
+; altdpram.inc                            ; yes             ; Megafunction                 ; /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/quartus/libraries/megafunctions/altdpram.inc      ;         ;
+; lpm_counter.inc                         ; yes             ; Megafunction                 ; /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/quartus/libraries/megafunctions/lpm_counter.inc   ;         ;
+; lpm_compare.inc                         ; yes             ; Megafunction                 ; /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/quartus/libraries/megafunctions/lpm_compare.inc   ;         ;
+; lpm_constant.inc                        ; yes             ; Megafunction                 ; /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/quartus/libraries/megafunctions/lpm_constant.inc  ;         ;
+; db/shift_taps_0im.tdf                   ; yes             ; Auto-Generated Megafunction  ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/shift_taps_0im.tdf                          ;         ;
+; db/altsyncram_mfa1.tdf                  ; yes             ; Auto-Generated Megafunction  ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/altsyncram_mfa1.tdf                         ;         ;
+; db/cntr_f5f.tdf                         ; yes             ; Auto-Generated Megafunction  ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/cntr_f5f.tdf                                ;         ;
+; db/cmpr_hrb.tdf                         ; yes             ; Auto-Generated Megafunction  ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/cmpr_hrb.tdf                                ;         ;
+; db/cntr_5lg.tdf                         ; yes             ; Auto-Generated Megafunction  ; /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/cntr_5lg.tdf                                ;         ;
++-----------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 442       ;
+;                                             ;           ;
+; Total combinational functions               ; 411       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 147       ;
+;     -- 3 input functions                    ; 153       ;
+;     -- <=2 input functions                  ; 111       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 246       ;
+;     -- arithmetic mode                      ; 165       ;
+;                                             ;           ;
+; Total registers                             ; 190       ;
+;     -- Dedicated logic registers            ; 190       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 30        ;
+; Total memory bits                           ; 660       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 212       ;
+; Total fan-out                               ; 2240      ;
+; Average fan-out                             ; 3.28      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                             ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                      ; Entity Name       ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+; |nivel_electronico                           ; 411 (13)            ; 190 (5)                   ; 660         ; 0          ; 0            ; 0       ; 0         ; 30   ; 0            ; 0          ; |nivel_electronico                                                                                                                                       ; nivel_electronico ; work         ;
+;    |axis_screen:axis_screen_x|               ; 70 (70)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|axis_screen:axis_screen_x                                                                                                             ; axis_screen       ; work         ;
+;    |axis_screen:axis_screen_y|               ; 71 (71)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|axis_screen:axis_screen_y                                                                                                             ; axis_screen       ; work         ;
+;    |calibrador:calibrador|                   ; 257 (0)             ; 169 (0)                   ; 660         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador                                                                                                                 ; calibrador        ; work         ;
+;       |calc_offset:calc_offset|              ; 94 (94)             ; 63 (63)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|calc_offset:calc_offset                                                                                         ; calc_offset       ; work         ;
+;       |controlador:controlador|              ; 86 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador                                                                                         ; controlador       ; work         ;
+;          |controlador_spi:controlador_spi|   ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador|controlador_spi:controlador_spi                                                         ; controlador_spi   ; work         ;
+;          |master_spi:master_spi|             ; 47 (0)              ; 38 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi                                                                   ; master_spi        ; work         ;
+;             |gen_SCK:gen_SCK|                ; 25 (25)             ; 13 (13)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK                                                   ; gen_SCK           ; work         ;
+;             |reg_MISO:reg_MISO|              ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MISO:reg_MISO                                                 ; reg_MISO          ; work         ;
+;             |reg_MOSI:reg_MOSI|              ; 22 (22)             ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MOSI:reg_MOSI                                                 ; reg_MOSI          ; work         ;
+;          |timer_5ms:timer_5ms|               ; 32 (32)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|controlador:controlador|timer_5ms:timer_5ms                                                                     ; timer_5ms         ; work         ;
+;       |estimador:estimador|                  ; 77 (58)             ; 45 (34)                   ; 660         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador                                                                                             ; estimador         ; work         ;
+;          |altshift_taps:reg_muestra_rtl_0|   ; 19 (0)              ; 11 (0)                    ; 660         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0                                                             ; altshift_taps     ; work         ;
+;             |shift_taps_0im:auto_generated|  ; 19 (0)              ; 11 (1)                    ; 660         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated                               ; shift_taps_0im    ; work         ;
+;                |altsyncram_mfa1:altsyncram2| ; 0 (0)               ; 0 (0)                     ; 660         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|altsyncram_mfa1:altsyncram2   ; altsyncram_mfa1   ; work         ;
+;                |cntr_5lg:cntr3|              ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|cntr_5lg:cntr3                ; cntr_5lg          ; work         ;
+;                |cntr_f5f:cntr1|              ; 12 (11)             ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|cntr_f5f:cntr1                ; cntr_f5f          ; work         ;
+;                   |cmpr_hrb:cmpr6|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |nivel_electronico|calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|cntr_f5f:cntr1|cmpr_hrb:cmpr6 ; cmpr_hrb          ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|altsyncram_mfa1:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 30           ; 22           ; 30           ; 22           ; 660  ; None ;
++------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                   ;
++---------------------------------------+----------------------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal                                                                           ;
++---------------------------------------+----------------------------------------------------------------------------------------------+
+; counter[0]                            ; Merged with calibrador:calibrador|controlador:controlador|timer_5ms:timer_5ms|cnt_tim_5ms[0] ;
+; Total Number of Removed Registers = 1 ;                                                                                              ;
++---------------------------------------+----------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 190   ;
+; Number of registers using Synchronous Clear  ; 6     ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 185   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 149   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                            ;
++---------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                             ; Fan out ;
++---------------------------------------------------------------------------------------------------------------+---------+
+; calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK|cnt_SCK[1]                ; 6       ;
+; calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK|cnt_SCK[3]                ; 4       ;
+; axis_screen:axis_screen_x|led_disp[0]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[1]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[2]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[3]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[4]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[5]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[6]                                                                         ; 1       ;
+; axis_screen:axis_screen_x|led_disp[7]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[0]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[1]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[2]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[3]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[4]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[5]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[6]                                                                         ; 1       ;
+; axis_screen:axis_screen_y|led_disp[7]                                                                         ; 1       ;
+; calibrador:calibrador|controlador:controlador|timer_5ms:timer_5ms|cnt_tim_5ms[0]                              ; 11      ;
+; calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK|ena_rd_i[1]               ; 2       ;
+; calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|dffe4 ; 22      ;
+; Total number of inverted registers = 21                                                                       ;         ;
++---------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                                                                   ;
++---------------------------------------------------------------------+-------------------------------------------------------------+------------+
+; Register Name                                                       ; Megafunction                                                ; Type       ;
++---------------------------------------------------------------------+-------------------------------------------------------------+------------+
+; calibrador:calibrador|estimador:estimador|reg_muestra[0..31][0..21] ; calibrador:calibrador|estimador:estimador|reg_muestra_rtl_0 ; SHIFT_TAPS ;
++---------------------------------------------------------------------+-------------------------------------------------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MOSI:reg_MOSI|tx_buffer[10] ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MOSI:reg_MOSI|tx_buffer[8]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MOSI:reg_MOSI|tx_buffer[4]  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MOSI:reg_MOSI|tx_buffer[5]  ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK|cnt_periods[2]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |nivel_electronico|calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK|cnt_SCK[3]      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |nivel_electronico|calibrador:calibrador|controlador:controlador|controlador_spi:controlador_spi|dato_wr[7]            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0|shift_taps_0im:auto_generated|altsyncram_mfa1:altsyncram2 ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                           ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                            ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: calibrador:calibrador|calc_offset:calc_offset ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; n              ; 64    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: calibrador:calibrador|estimador:estimador ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0 ;
++----------------+----------------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value          ; Type                                                                                     ;
++----------------+----------------+------------------------------------------------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                                                                  ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                                                                  ;
+; TAP_DISTANCE   ; 32             ; Untyped                                                                                  ;
+; WIDTH          ; 22             ; Untyped                                                                                  ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                                                                  ;
+; CBXI_PARAMETER ; shift_taps_0im ; Untyped                                                                                  ;
++----------------+----------------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; altshift_taps Parameter Settings by Entity Instance                                                    ;
++----------------------------+---------------------------------------------------------------------------+
+; Name                       ; Value                                                                     ;
++----------------------------+---------------------------------------------------------------------------+
+; Number of entity instances ; 1                                                                         ;
+; Entity Instance            ; calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                                                         ;
+;     -- TAP_DISTANCE        ; 32                                                                        ;
+;     -- WIDTH               ; 22                                                                        ;
++----------------------------+---------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 30                          ;
+; cycloneiii_ff         ; 190                         ;
+;     CLR               ; 41                          ;
+;     ENA               ; 5                           ;
+;     ENA CLR           ; 130                         ;
+;     ENA CLR SCLR      ; 6                           ;
+;     ENA CLR SLD       ; 8                           ;
+; cycloneiii_lcell_comb ; 414                         ;
+;     arith             ; 165                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 106                         ;
+;     normal            ; 249                         ;
+;         0 data inputs ; 4                           ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 42                          ;
+;         3 data inputs ; 47                          ;
+;         4 data inputs ; 147                         ;
+; cycloneiii_ram_block  ; 22                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 4.41                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu May 12 20:35:29 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off nivel_electronico -c nivel_electronico
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
+    Info (12022): Found design unit 1: reg_MISO-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd Line: 18
+    Info (12023): Found entity 1: reg_MISO File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
+    Info (12022): Found design unit 1: master_spi-estructural File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd Line: 32
+    Info (12023): Found entity 1: master_spi File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd
+    Info (12022): Found design unit 1: gen_SCK-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd Line: 28
+    Info (12023): Found entity 1: gen_SCK File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
+    Info (12022): Found design unit 1: reg_MOSI-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd Line: 22
+    Info (12023): Found entity 1: reg_MOSI File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl
+    Info (12022): Found design unit 1: controlador_spi-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl Line: 27
+    Info (12023): Found entity 1: controlador_spi File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd
+    Info (12022): Found design unit 1: controlador-estructural File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd Line: 31
+    Info (12023): Found entity 1: controlador File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd
+    Info (12022): Found design unit 1: timer_5ms-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd Line: 16
+    Info (12023): Found entity 1: timer_5ms File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd
+    Info (12022): Found design unit 1: calibrador-estructural File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd Line: 28
+    Info (12023): Found entity 1: calibrador File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calc_offset.vhd
+    Info (12022): Found design unit 1: calc_offset-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calc_offset.vhd Line: 23
+    Info (12023): Found entity 1: calc_offset File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calc_offset.vhd Line: 8
+Info (12021): Found 2 design units, including 0 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/auxiliar.vhd
+    Info (12022): Found design unit 1: auxiliar File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/auxiliar.vhd Line: 4
+    Info (12022): Found design unit 2: auxiliar-body File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/auxiliar.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd
+    Info (12022): Found design unit 1: estimador-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd Line: 23
+    Info (12023): Found entity 1: estimador File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd
+    Info (12022): Found design unit 1: axis_screen-rtl File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd Line: 22
+    Info (12023): Found entity 1: axis_screen File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd Line: 13
+Info (12021): Found 2 design units, including 1 entities, in source file /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd
+    Info (12022): Found design unit 1: nivel_electronico-estructural File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 27
+    Info (12023): Found entity 1: nivel_electronico File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 10
+Info (12127): Elaborating entity "nivel_electronico" for the top level hierarchy
+Info (12129): Elaborating entity "axis_screen" using architecture "A:rtl" for hierarchy "axis_screen:axis_screen_x" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 37
+Info (12129): Elaborating entity "calibrador" using architecture "A:estructural" for hierarchy "calibrador:calibrador" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 51
+Info (12129): Elaborating entity "calc_offset" using architecture "A:rtl" for hierarchy "calibrador:calibrador|calc_offset:calc_offset" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd Line: 35
+Info (12129): Elaborating entity "estimador" using architecture "A:rtl" for hierarchy "calibrador:calibrador|estimador:estimador" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd Line: 45
+Info (12129): Elaborating entity "controlador" using architecture "A:estructural" for hierarchy "calibrador:calibrador|controlador:controlador" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd Line: 55
+Info (12129): Elaborating entity "master_spi" using architecture "A:estructural" for hierarchy "calibrador:calibrador|controlador:controlador|master_spi:master_spi" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd Line: 45
+Info (12129): Elaborating entity "gen_SCK" using architecture "A:rtl" for hierarchy "calibrador:calibrador|controlador:controlador|master_spi:master_spi|gen_SCK:gen_SCK" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd Line: 38
+Info (12129): Elaborating entity "reg_MOSI" using architecture "A:rtl" for hierarchy "calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MOSI:reg_MOSI" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd Line: 51
+Info (12129): Elaborating entity "reg_MISO" using architecture "A:rtl" for hierarchy "calibrador:calibrador|controlador:controlador|master_spi:master_spi|reg_MISO:reg_MISO" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd Line: 62
+Info (12129): Elaborating entity "controlador_spi" using architecture "A:rtl" for hierarchy "calibrador:calibrador|controlador:controlador|controlador_spi:controlador_spi" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd Line: 78
+Info (12129): Elaborating entity "timer_5ms" using architecture "A:rtl" for hierarchy "calibrador:calibrador|controlador:controlador|timer_5ms:timer_5ms" File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd Line: 89
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "calibrador:calibrador|estimador:estimador|reg_muestra_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 32
+        Info (286033): Parameter WIDTH set to 22
+Info (12130): Elaborated megafunction instantiation "calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0"
+Info (12133): Instantiated megafunction "calibrador:calibrador|estimador:estimador|altshift_taps:reg_muestra_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "32"
+    Info (12134): Parameter "WIDTH" = "22"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_0im.tdf
+    Info (12023): Found entity 1: shift_taps_0im File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/shift_taps_0im.tdf Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mfa1.tdf
+    Info (12023): Found entity 1: altsyncram_mfa1 File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/altsyncram_mfa1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_f5f.tdf
+    Info (12023): Found entity 1: cntr_f5f File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/cntr_f5f.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_hrb.tdf
+    Info (12023): Found entity 1: cmpr_hrb File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/cmpr_hrb.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_5lg.tdf
+    Info (12023): Found entity 1: cntr_5lg File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/db/cntr_5lg.tdf Line: 26
+Info (13000): Registers with preset signals will power-up high File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd Line: 47
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Y_disp[0]" is stuck at GND File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[1]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[2]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[3]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[4]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[5]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[6]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+    Warning (13410): Pin "Y_disp[7]" is stuck at VCC File: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd Line: 23
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 497 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 445 logic cells
+    Info (21064): Implemented 22 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 439 megabytes
+    Info: Processing ended: Thu May 12 20:35:48 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:41
+
+
