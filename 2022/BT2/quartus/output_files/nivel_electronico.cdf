@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("/home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/output_files/") File("nivel_electronico.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484ES) Path("/home/lukilukeskywalker/Descargas/") File("top.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

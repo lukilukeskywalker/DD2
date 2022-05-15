@@ -53,32 +53,40 @@ begin
 			end if;
 		end if;
 	end process mostrador_proc;
--- Pag 10 Datasheet En modo normal con 10 bits de resolucion obtenemos una sensibilidad de 4mg/digito 
---	grado(2 downto 0) <= "000" when axis_media(10 downto 0) >= 216  else     -- 1
---						"001" when axis_media(10 downto 0) >=187 and axis_media(10 downto 0) <216 else		-- 0,866 g
---						"010" when 	axis_media(10 downto 0) >150 and axis_media(10 downto 0) <187 else	-- 0,75 g
---						"011" when axis_media(10 downto 0) >= 116 and axis_media(10 downto 0) <150 else	-- 0,6 g
---						"100" when axis_media(10 downto 0) >= 82 and axis_media(10 downto 0) <116 else	-- 0,488 g
---						"101" when axis_media(10 downto 0) >= 50 and axis_media(10 downto 0)<82 else	-- 0,33 g
---						"110" when axis_media(10 downto 0)>= 21 and axis_media(10 downto 0) <50 else	-- 0,2 g
---						"111"; --0,086
+-- Pag 10 Datasheet En modo normal con 10 bits de resolucion obtenemos una sensibilidad de 4mg/digito
+--	grado(2 downto 0) <= "000" when (axis_media(10 downto 0) <= 17 and axis_media(11) = '0') or		
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  <= 17 )) else 
+--						"001" when  (axis_media(10 downto 0) <= 50 and axis_media(11) = '0') or
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 217 )) else
+--						"010" when (axis_media(10 downto 0) <= 84 and axis_media(11) = '0') or
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 184 )) else
+--						"011" when (axis_media(10 downto 0) <= 117 and axis_media(11) = '0')  or
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 150 )) else
+--						"100" when (axis_media(10 downto 0) <= 150 and axis_media(11) = '0') or
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 117 )) else
+--						"101" when (axis_media(10 downto 0) <= 184 and axis_media(11) = '0')or
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 84 )) else
+--						"110" when (axis_media(10 downto 0) <= 217 and axis_media(11) = '0')or
+--								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 50 )) else
+--						"111"; --when axis_media(11) = '0' or (axis_media(11) = '1');
+--	
+--	grado(3) <= not axis_media(11) when not ((not axis_media + 1) <=17) else
+--				'1';
 
---Sorry rick, trabajo mejor de noche XD. Habia un error en mi logica de todas formas
-	grado(2 downto 0) <= "000" when (axis_media(10 downto 0) <= 17 and axis_media(11) = '0') else--or
-								 --(axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 217 )) else --Esta seccion no se incluye porque si es menos a -217 (osea menor que -1g se apagan todos los leds, y la especificacion no indica esta posibilidad
-						"001" when  (axis_media(10 downto 0) <= 50 and axis_media(11) = '0') or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 184 )) else
-						"010" when (axis_media(10 downto 0) <= 84 and axis_media(11) = '0') or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 150 )) else
-						"011" when (axis_media(10 downto 0) <= 117 and axis_media(11) = '0')  or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 117 )) else
-						"100" when (axis_media(10 downto 0) <= 150 and axis_media(11) = '0') or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 84 )) else
-						"101" when (axis_media(10 downto 0) <= 184 and axis_media(11) = '0')or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 50 )) else
-						"110" when (axis_media(10 downto 0) <= 217 and axis_media(11) = '0')or
-								 (axis_media(11) = '1' and ((not axis_media(10 downto 0) + 1)  > 17 )) else
-						"111"; --when axis_media(11) = '0' or (axis_media(11) = '1');
-	
-	grado(3) <= not axis_media(11);
+	--Pero quizas mas eficiente sea:
+	grado <= x"1" when axis_media < x"F27" and axis_media(11) /= '0' else		-- < -217
+			x"2" when axis_media < x"F48" and axis_media(11) /= '0' else		-- < -184
+			x"3" when axis_media < x"F6A" and axis_media(11) /= '0' else		-- < -150
+			x"4" when axis_media < x"F8B" and axis_media(11) /= '0' else		-- < -117
+			x"5" when axis_media < x"FAC" and axis_media(11) /= '0' else		-- < -84
+			x"6" when axis_media < x"FCE" and axis_media(11) /= '0' else		-- < -50
+			x"7" when axis_media < x"FEF" and axis_media(11) /= '0' else		-- < -17
+			x"8" when axis_media < 17 or axis_media(11) = '1' else
+			x"9" when axis_media < 50 else
+			x"A" when axis_media < 84 else
+			x"B" when axis_media < 117 else
+			x"C" when axis_media < 150 else
+			x"D" when axis_media < 184 else
+			x"E" when axis_media < 217 else
+			x"F";
 end rtl;		

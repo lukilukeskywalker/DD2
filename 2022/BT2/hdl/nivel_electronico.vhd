@@ -77,6 +77,6 @@ architecture estructural of nivel_electronico is
 		Y_disp_sel(5) <= not asistant_Y_disp(5) when counter(5 downto 3) = 5 else '1';
 		Y_disp_sel(6) <= not asistant_Y_disp(6) when counter(5 downto 3) = 6 else '1';
 		Y_disp_sel(7) <= not asistant_Y_disp(7) when counter(5 downto 3) = 7 else '1';
-		Y_disp <= "11111110"; 
+		Y_disp <= "01000000"; 
 end estructural;
 					
