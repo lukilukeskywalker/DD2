@@ -1,6 +1,9 @@
 -- Autor Lukitas
 -- Fecha 04-may-22
--- rev 1
+-- rev 1.1
+-- Historia de revisiones
+-- rev 1: Commit inicial. Sistema completo
+-- rev 1.1: Añadir generico DIV_5ms
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -9,6 +12,8 @@ use ieee.std_logic_unsigned.all;
 
 
 entity controlador is
+	generic( DIV_5ms: natural:= 250000
+			);
 	port(nRst:	in	std_logic;
 		clk:	in	std_logic;
 
@@ -87,6 +92,8 @@ architecture estructural of controlador is
 					tic_5ms => tic_5ms
 					);
 		timer_5ms: entity work.timer_5ms(rtl)
+			generic map( DIV_5ms => DIV_5ms
+					)
 			port map(nRst => nRst,
 					clk => clk,
 					tic_5ms => tic_5ms

@@ -15,21 +15,21 @@ Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 515
+!i122 556
 Z5 d/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim
-Z6 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/agente_spi.vhd
-Z7 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/agente_spi.vhd
+Z6 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/agente_spi.vhd
+Z7 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/agente_spi.vhd
 l0
 L5 1
 VTgGzEATzcgS@SiS^EM0W=3
 !s100 ECk_oV];O5RZlfOja>=7Q1
 Z8 OV;C;2020.1;71
 32
-Z9 !s110 1652617295
+Z9 !s110 1652724752
 !i10b 1
-Z10 !s108 1652617295.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/agente_spi.vhd|
-Z12 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/agente_spi.vhd|
+Z10 !s108 1652724752.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/agente_spi.vhd|
+Z12 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/agente_spi.vhd|
 !i113 1
 Z13 o-work work -2002 -explicit
 Z14 tExplicit 1 CvgOpt 0
@@ -39,7 +39,7 @@ R2
 R3
 R4
 Z15 DEx4 work 10 agente_spi 0 22 TgGzEATzcgS@SiS^EM0W=3
-!i122 515
+!i122 556
 l55
 L16 104
 VLgPzlkNU6QOF102ZO06YW0
@@ -107,16 +107,16 @@ R5
 Z25 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd
 Z26 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd
 l0
-L14 1
+Z27 L14 1
 V;g:1iTKS3dzmba[lOYBKk1
 !s100 Nn>_^Tz5g[2SbUQGH4Eb^1
 R8
 32
-Z27 !s110 1652622836
+Z28 !s110 1652622836
 !i10b 1
-Z28 !s108 1652622836.000000
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd|
-Z30 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd|
+Z29 !s108 1652622836.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd|
+Z31 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Axis_screen.vhd|
 !i113 1
 R13
 R14
@@ -125,19 +125,19 @@ R1
 R2
 R3
 R4
-Z31 DEx4 work 11 axis_screen 0 22 ;g:1iTKS3dzmba[lOYBKk1
+Z32 DEx4 work 11 axis_screen 0 22 ;g:1iTKS3dzmba[lOYBKk1
 !i122 542
 l25
-Z32 L23 70
+L23 70
 VMG^lRj95]D_;KhGO7gP@z0
 !s100 RC]=bOKVc2HZlDf8e]c7E3
 R8
 32
-R27
-!i10b 1
 R28
+!i10b 1
 R29
 R30
+R31
 !i113 1
 R13
 R14
@@ -189,32 +189,32 @@ R38
 R13
 R14
 Ecalibrador
-Z40 w1652306719
+Z40 w1652698709
 R1
 R2
 R3
 R4
-!i122 529
+!i122 546
 R5
 Z41 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd
 Z42 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd
 l0
 Z43 L10 1
-VUYCSih2Xn154Q`l>L=D5a0
-!s100 ;]NgXkK;@5n_[9Y9=_lEm3
+Vf>l7U4UAPh_e[aU[<@>X53
+!s100 [JU8;MW;Y6kRgFl<K6gaL0
 R8
 32
-R19
+Z44 !s110 1652698716
 !i10b 1
-R20
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd|
-Z45 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd|
+Z45 !s108 1652698716.000000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd|
+Z47 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/calibrador.vhd|
 !i113 1
 R13
 R14
 Aestructural
-Z46 DEx4 work 11 controlador 0 22 2AfXTE`8E0QXYbF3N^Z5@0
-Z47 DEx4 work 9 estimador 0 22 mBUXLa<[SDbO9RV1@oQF;1
+Z48 DEx4 work 11 controlador 0 22 M6>;ZQDa7aXdciHla;FBd1
+Z49 DEx4 work 9 estimador 0 22 mBUXLa<[SDbO9RV1@oQF;1
 R34
 R23
 R39
@@ -222,32 +222,32 @@ R1
 R2
 R3
 R4
-Z48 DEx4 work 10 calibrador 0 22 UYCSih2Xn154Q`l>L=D5a0
-!i122 529
-l34
-L28 38
-VO7D6Ed92PkfTTWGWV<JUT3
-!s100 YXc7WUJ8@6z;5M6ki8?@f1
+Z50 DEx4 work 10 calibrador 0 22 f>l7U4UAPh_e[aU[<@>X53
+!i122 546
+l36
+L30 40
+VAVemAI1nWTXI=ALCY]]JG3
+!s100 ao^EZJ:Q[WJXN^?R>C22l0
 R8
 32
-R19
-!i10b 1
-R20
 R44
+!i10b 1
 R45
+R46
+R47
 !i113 1
 R13
 R14
 Ecalibrador_test
-Z49 w1652221736
+Z51 w1652221736
 R1
 R2
 R3
 R4
 !i122 530
 R5
-Z50 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd
-Z51 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd
+Z52 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd
+Z53 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd
 l0
 L9 1
 VU4TG?mFT`Jk;4c0f]2NGW2
@@ -257,15 +257,15 @@ R8
 R19
 !i10b 1
 R20
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd|
-Z53 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd|
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd|
+Z55 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/calibrador_test.vhd|
 !i113 1
 R13
 R14
 Atest
 R15
-R48
-Z54 DEx4 work 17 test_gen_clk_nrst 0 22 37g0h?_[n0b9DDT]7OIS62
+DEx4 work 10 calibrador 0 22 UYCSih2Xn154Q`l>L=D5a0
+Z56 DEx4 work 17 test_gen_clk_nrst 0 22 37g0h?_[n0b9DDT]7OIS62
 R1
 R2
 R3
@@ -281,56 +281,56 @@ R8
 R19
 !i10b 1
 R20
-R52
-R53
+R54
+R55
 !i113 1
 R13
 R14
 Econtrolador
-Z55 w1652129743
+Z57 w1652698587
 R1
 R2
 R3
 R4
-!i122 522
+!i122 545
 R5
-Z56 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd
-Z57 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd
+Z58 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd
+Z59 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd
 l0
-Z58 L11 1
-V2AfXTE`8E0QXYbF3N^Z5@0
-!s100 <=AjA67J4SbP?3WmkJHLX3
+R27
+VM6>;ZQDa7aXdciHla;FBd1
+!s100 :EMN>D^WWNz44_clRJUYc1
 R8
 32
-R19
+Z60 !s110 1652698599
 !i10b 1
-R20
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd|
-Z60 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd|
+Z61 !s108 1652698599.000000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd|
+Z63 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/Controlador.vhd|
 !i113 1
 R13
 R14
 Aestructural
-Z61 DEx4 work 9 timer_5ms 0 22 157C6zhz;hHB7zB;`O`lz1
-Z62 DEx4 work 15 controlador_spi 0 22 >cnROPADnCYBW;4^2K[Dh0
-Z63 DEx4 work 10 master_spi 0 22 K?omGGI16Lc=TFHzb32Qi2
+Z64 DEx4 work 9 timer_5ms 0 22 Q1?EToNHiW1]o3`f7E?G83
+Z65 DEx4 work 15 controlador_spi 0 22 >cnROPADnCYBW;4^2K[Dh0
+Z66 DEx4 work 10 master_spi 0 22 K?omGGI16Lc=TFHzb32Qi2
 R1
 R2
 R3
 R4
-R46
-!i122 522
-l44
-L31 66
-VPL2ioT21L;OR>5goH40;l2
-!s100 H5ae3X9CBPfkjR<M66E:L0
+R48
+!i122 545
+l49
+L36 68
+V^[jC`E4bOocbnAM56X@=:0
+!s100 fRMz;Ka0JgMR3`8hEY1Ki2
 R8
 32
-R19
-!i10b 1
-R20
-R59
 R60
+!i10b 1
+R61
+R62
+R63
 !i113 1
 R13
 R14
@@ -342,8 +342,8 @@ R3
 R4
 !i122 523
 R5
-Z64 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl
-Z65 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl
+Z67 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl
+Z68 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl
 l0
 L9 1
 V>cnROPADnCYBW;4^2K[Dh0
@@ -353,8 +353,8 @@ R8
 R19
 !i10b 1
 R20
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl|
-Z67 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl|
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl|
+Z70 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/controlador_spi.vhdl|
 !i113 1
 R13
 R14
@@ -363,7 +363,7 @@ R1
 R2
 R3
 R4
-R62
+R65
 !i122 523
 l39
 L27 66
@@ -374,21 +374,21 @@ R8
 R19
 !i10b 1
 R20
-R66
-R67
+R69
+R70
 !i113 1
 R13
 R14
 Econtrolador_test
-Z68 w1652133123
+Z71 w1652133123
 R1
 R2
 R3
 R4
 !i122 525
 R5
-Z69 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd
-Z70 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd
+Z72 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd
+Z73 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd
 l0
 R43
 VM9PP^IFbTVT[W1?O7RO;S3
@@ -398,15 +398,15 @@ R8
 R19
 !i10b 1
 R20
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd|
-Z72 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd|
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd|
+Z75 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Controlador_Test.vhd|
 !i113 1
 R13
 R14
 Atest
 R15
-R46
-R54
+DEx4 work 11 controlador 0 22 2AfXTE`8E0QXYbF3N^Z5@0
+R56
 R1
 R2
 R3
@@ -422,13 +422,13 @@ R8
 R19
 !i10b 1
 R20
-R71
-R72
+R74
+R75
 !i113 1
 R13
 R14
 Eestimador
-Z73 w1652222185
+Z76 w1652222185
 R1
 R34
 R3
@@ -436,8 +436,8 @@ R4
 R23
 !i122 526
 R5
-Z74 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd
-Z75 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd
+Z77 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd
+Z78 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd
 l0
 L8 1
 VmBUXLa<[SDbO9RV1@oQF;1
@@ -447,8 +447,8 @@ R8
 R19
 !i10b 1
 R20
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd|
-Z77 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd|
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd|
+Z80 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Calibrador/estimador.vhd|
 !i113 1
 R13
 R14
@@ -458,7 +458,7 @@ R34
 R3
 R4
 R23
-R47
+R49
 !i122 526
 l34
 L23 62
@@ -469,32 +469,32 @@ R8
 R19
 !i10b 1
 R20
-R76
-R77
+R79
+R80
 !i113 1
 R13
 R14
 Egen_sck
-Z78 w1651966934
+Z81 w1651966934
 R1
 R2
 R3
 R4
 !i122 518
 R5
-Z79 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd
-Z80 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd
+Z82 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd
+Z83 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd
 l0
-R58
+L11 1
 V`H;mYNdCg:n7;aS0oMl=a0
 !s100 ;nk_IfA]_;>7HO^n1ZIjE3
 R8
 32
-R9
+Z84 !s110 1652617295
 !i10b 1
-R10
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd|
-Z82 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd|
+Z85 !s108 1652617295.000000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd|
+Z87 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/gen_SCK.vhd|
 !i113 1
 R13
 R14
@@ -503,7 +503,7 @@ R1
 R2
 R3
 R4
-Z83 DEx4 work 7 gen_sck 0 22 `H;mYNdCg:n7;aS0oMl=a0
+Z88 DEx4 work 7 gen_sck 0 22 `H;mYNdCg:n7;aS0oMl=a0
 !i122 518
 l43
 L28 117
@@ -511,47 +511,47 @@ V4Jd]iKbOa0Wg9YDJ@HCHC2
 !s100 L50miPNF0dXNlP]R^BEme1
 R8
 32
-R9
+R84
 !i10b 1
-R10
-R81
-R82
+R85
+R86
+R87
 !i113 1
 R13
 R14
 Emaster_spi
-Z84 w1651967021
+Z89 w1651967021
 R1
 R2
 R3
 R4
 !i122 519
 R5
-Z85 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
-Z86 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
+Z90 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
+Z91 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
 l0
 L9 1
 VK?omGGI16Lc=TFHzb32Qi2
 !s100 NA<id;IIBCVmTX2NHFYfd3
 R8
 32
-R9
+R84
 !i10b 1
-R10
-Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd|
-Z88 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd|
+R85
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd|
+Z93 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd|
 !i113 1
 R13
 R14
 Aestructural
-Z89 DEx4 work 8 reg_miso 0 22 aV9da]14IQ50RLb:mgL`X0
-Z90 DEx4 work 8 reg_mosi 0 22 0GNn=7m9zNF`5>h@3JjeN1
-R83
+Z94 DEx4 work 8 reg_miso 0 22 aV9da]14IQ50RLb:mgL`X0
+Z95 DEx4 work 8 reg_mosi 0 22 0GNn=7m9zNF`5>h@3JjeN1
+R88
 R1
 R2
 R3
 R4
-R63
+R66
 !i122 519
 l37
 L32 39
@@ -559,43 +559,43 @@ VHa0ij6gG_BO_bA6e27_8Q0
 !s100 2_mh7CHO<okV0Q=FzVPnh1
 R8
 32
-R9
+R84
 !i10b 1
-R10
-R87
-R88
+R85
+R92
+R93
 !i113 1
 R13
 R14
 Emaster_spi_test
-Z91 w1651967184
+Z96 w1651967184
 R1
 R2
 R3
 R4
 !i122 513
 R5
-Z92 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd
-Z93 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd
+Z97 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd
+Z98 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd
 l0
 R43
 VX]GSc[6c9KVZO5B4R6OJ:3
 !s100 R7g>j45DC@VoH0KW@l@@g1
 R8
 32
-R9
+R84
 !i10b 1
-R10
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd|
-Z95 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd|
+R85
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd|
+Z100 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/Master_SPI_Test.vhd|
 !i113 1
 R13
 R14
 Atest
-Z96 DEx4 work 17 miso_control_test 0 22 I15Pacz0mUHHQKaI?5bQ52
+Z101 DEx4 work 17 miso_control_test 0 22 I15Pacz0mUHHQKaI?5bQ52
 R15
-R63
-R54
+R66
+R56
 R1
 R2
 R3
@@ -608,35 +608,35 @@ V?zjI6Z8]`C6QKjG0L;KPK0
 !s100 3J^Q?la^5lmoH_hTI3EYL0
 R8
 32
-R9
+R84
 !i10b 1
-R10
-R94
-R95
+R85
+R99
+R100
 !i113 1
 R13
 R14
 Emiso_control_test
-Z97 w1651622484
+Z102 w1651622484
 R1
 R2
 R3
 R4
 !i122 514
 R5
-Z98 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd
-Z99 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd
+Z103 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd
+Z104 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd
 l0
 L8 1
 VI15Pacz0mUHHQKaI?5bQ52
 !s100 8HU@6;^a49>h__jZc<JE[0
 R8
 32
-R9
+R84
 !i10b 1
-R10
-Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd|
-Z101 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd|
+R85
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd|
+Z106 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MISO_control_test.vhd|
 !i113 1
 R13
 R14
@@ -645,7 +645,7 @@ R1
 R2
 R3
 R4
-R96
+R101
 !i122 514
 l53
 L19 61
@@ -653,82 +653,176 @@ V=OJ]VTGUZlS<;Kg4<R`Y90
 !s100 ]_D8;G[b1ab>1H_e0=UEW2
 R8
 32
-R9
+R84
 !i10b 1
-R10
-R100
-R101
-!i113 1
-R13
-R14
-Enivel_electronico
-Z102 w1652458217
-R1
-R2
-R3
-R4
-!i122 532
-R5
-Z103 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd
-Z104 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd
-l0
-R43
-VHAY4f8zUaQZ2=_@i=7Don0
-!s100 Fj_X?[L_7AGRjn_?@XVo>0
-R8
-32
-R19
-!i10b 1
-R20
-Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd|
-Z106 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd|
-!i113 1
-R13
-R14
-Aestructural
-R48
-R31
-R1
-R2
-R3
-R4
-DEx4 work 17 nivel_electronico 0 22 HAY4f8zUaQZ2=_@i=7Don0
-!i122 532
-l36
-L27 55
-VWNbRAGWC:>f5z>fC<=O_73
-!s100 LY:7O_bcjbOhQZMNW5:zN3
-R8
-32
-R19
-!i10b 1
-R20
+R85
 R105
 R106
 !i113 1
 R13
 R14
-Enrstclk_sim
-Z107 w1652394773
+Emonitor_spi
+Z107 w1652723119
 R1
 R2
 R3
 R4
-!i122 517
+!i122 554
 R5
-Z108 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd
-Z109 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd
+Z108 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/monitor_spi.vhd
+Z109 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/monitor_spi.vhd
 l0
-Z110 L21 1
-VZNDgg6k?Ozz7oY9@=0Ce]1
-!s100 IoY=hPf8;=dzXa=EO5lZ23
+Z110 L12 1
+VN<ICCCVU0L`o2R9>J@]fl1
+!s100 @63]FD80PkE5RChUjbT:42
 R8
 32
-R9
+Z111 !s110 1652723124
 !i10b 1
-R10
-Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd|
-Z112 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd|
+Z112 !s108 1652723124.000000
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/monitor_spi.vhd|
+Z114 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/monitor_spi.vhd|
+!i113 1
+R13
+R14
+Amonitor
+R1
+R2
+R3
+R4
+DEx4 work 11 monitor_spi 0 22 N<ICCCVU0L`o2R9>J@]fl1
+!i122 554
+l21
+L20 76
+V8GI`do?Tj`<[?c4C>4@<b3
+!s100 n>WlUjT?XldHmhL1HG79G3
+R8
+32
+R111
+!i10b 1
+R112
+R113
+R114
+!i113 1
+R13
+R14
+Enivel_electronico
+Z115 w1652728144
+R1
+R2
+R3
+R4
+!i122 560
+R5
+Z116 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd
+Z117 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd
+l0
+R43
+V9?EgL1fAMGKco[zjzh97L3
+!s100 VF:1VbKk`h9BmS7hQEF2k2
+R8
+32
+Z118 !s110 1652728147
+!i10b 1
+Z119 !s108 1652728147.000000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd|
+Z121 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/nivel_electronico.vhd|
+!i113 1
+R13
+R14
+Aestructural
+R50
+R32
+R1
+R2
+R3
+R4
+Z122 DEx4 work 17 nivel_electronico 0 22 9?EgL1fAMGKco[zjzh97L3
+!i122 560
+l38
+L29 57
+VGJL@TIV4VhXFRk[QHi`@72
+!s100 c^3:KkR;1?[eVo^l[ShkX2
+R8
+32
+R118
+!i10b 1
+R119
+R120
+R121
+!i113 1
+R13
+R14
+Enivel_electronico_test
+Z123 w1652727969
+R1
+R2
+R3
+R4
+!i122 559
+R5
+Z124 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/nivel_electronico_test.vhd
+Z125 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/nivel_electronico_test.vhd
+l0
+R43
+VL8c[LRQJb[0hSZUL<RKgX3
+!s100 LTDBLUMMbFi81dPo12<II2
+R8
+32
+Z126 !s110 1652727979
+!i10b 1
+Z127 !s108 1652727978.000000
+Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/nivel_electronico_test.vhd|
+Z129 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/nivel_electronico_test.vhd|
+!i113 1
+R13
+R14
+Atest
+R122
+Z130 DEx4 work 11 spi_monitor 0 22 0GQ5Z6F[CY^aEi>CLZL:>2
+R15
+Z131 DEx4 work 11 nrstclk_sim 0 22 igRhM[2dU>4PQ_a7_zhcc3
+R1
+R2
+R3
+R4
+DEx4 work 22 nivel_electronico_test 0 22 L8c[LRQJb[0hSZUL<RKgX3
+!i122 559
+l20
+L13 54
+Vn<zCKBm77<j4e=gfM=0;11
+!s100 1T@g7E@WeH^Z`<Sh@Xe[A0
+R8
+32
+R126
+!i10b 1
+R127
+R128
+R129
+!i113 1
+R13
+R14
+Enrstclk_sim
+Z132 w1652724743
+R1
+R2
+R3
+R4
+!i122 555
+R5
+Z133 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/nRstClk_sim.vhd
+Z134 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/nRstClk_sim.vhd
+l0
+Z135 L21 1
+VigRhM[2dU>4PQ_a7_zhcc3
+!s100 D=Nn_LUOgnU0jGL<b;fW;0
+R8
+32
+Z136 !s110 1652724748
+!i10b 1
+Z137 !s108 1652724747.000000
+Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/nRstClk_sim.vhd|
+Z139 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/SIM/nRstClk_sim.vhd|
 !i113 1
 R13
 R14
@@ -737,43 +831,43 @@ R1
 R2
 R3
 R4
-Z113 DEx4 work 11 nrstclk_sim 0 22 ZNDgg6k?Ozz7oY9@=0Ce]1
-!i122 517
-l33
-Z114 L27 28
-Vdd1GVlb6SDE3gWM02ASoA1
-!s100 Tm_DX>g1kJI<YKEh@o^z01
+R131
+!i122 555
+l35
+L29 28
+VOE]>dcbG7[[235A<WK8OZ0
+!s100 4J:E^=FcPL@XTRjag2n7X0
 R8
 32
-R9
+R136
 !i10b 1
-R10
-R111
-R112
+R137
+R138
+R139
 !i113 1
 R13
 R14
 Ereg_miso
-Z115 w1651357361
+Z140 w1651357361
 R1
 R2
 R3
 R4
 !i122 520
 R5
-Z116 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
-Z117 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
+Z141 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
+Z142 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
 l0
 L9 1
 VaV9da]14IQ50RLb:mgL`X0
 !s100 iBHlH>=H;ZiION5HHb2=>0
 R8
 32
-R9
+R84
 !i10b 1
-R10
-Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd|
-Z119 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd|
+R85
+Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd|
+Z144 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd|
 !i113 1
 R13
 R14
@@ -782,7 +876,7 @@ R1
 R2
 R3
 R4
-R89
+R94
 !i122 520
 l19
 L18 14
@@ -790,35 +884,35 @@ V7hZW]jOMF68QgoK3[dVbE0
 !s100 `oOCBTMQS<0eklT:dd=S61
 R8
 32
-R9
+R84
 !i10b 1
-R10
-R118
-R119
+R85
+R143
+R144
 !i113 1
 R13
 R14
 Ereg_mosi
-Z120 w1651946926
+Z145 w1652728549
 R1
 R2
 R3
 R4
-!i122 521
+!i122 563
 R5
-Z121 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
-Z122 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
+Z146 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
+Z147 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
 l0
 L9 1
 V0GNn=7m9zNF`5>h@3JjeN1
 !s100 NGkhM01lgB3YXEG0kU@1G0
 R8
 32
-R19
+Z148 !s110 1652728553
 !i10b 1
-R10
-Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd|
-Z124 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd|
+Z149 !s108 1652728552.000000
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd|
+Z151 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd|
 !i113 1
 R13
 R14
@@ -827,48 +921,93 @@ R1
 R2
 R3
 R4
-R90
-!i122 521
+R95
+!i122 563
 l24
 L22 25
-Vk=VLZ=e3K>Xc3iP5bJek11
-!s100 9gWMjXf3k;KCLZ1D:hC330
+VNGiWEP=mSLK<bRUdMNM0U2
+!s100 k]hlO_:]h]lTLi0UNAXYi1
 R8
 32
-R19
+R148
 !i10b 1
-R10
-R123
-R124
+R149
+R150
+R151
+!i113 1
+R13
+R14
+Espi_monitor
+Z152 w1652728932
+R1
+R2
+R3
+R4
+!i122 565
+R5
+Z153 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MONITORs/spi_monitor.vhd
+Z154 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MONITORs/spi_monitor.vhd
+l0
+R110
+V0GQ5Z6F[CY^aEi>CLZL:>2
+!s100 4Qk;77D]eIm`OL4F^bIXG3
+R8
+32
+Z155 !s110 1652728939
+!i10b 1
+Z156 !s108 1652728939.000000
+Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MONITORs/spi_monitor.vhd|
+Z158 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/MONITORs/spi_monitor.vhd|
+!i113 1
+R13
+R14
+Amonitor
+R1
+R2
+R3
+R4
+R130
+!i122 565
+l21
+Z159 L20 77
+VRf@mD_WCW5^hKUVD0>:[d2
+!s100 K>^NPCRc?JmE>WjS<8RAf2
+R8
+32
+R155
+!i10b 1
+R156
+R157
+R158
 !i113 1
 R13
 R14
 Etest_5ms_tick
-Z125 w1651790286
+Z160 w1651790286
 R1
 R2
 R3
 R4
 !i122 516
 R5
-Z126 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd
-Z127 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd
+Z161 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd
+Z162 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd
 l0
 L9 1
 VM4L8EReTZQ;Q]A_ck^_EN0
 !s100 ol<_jjk7T@^elgEc6Th;92
 R8
 32
-R9
+R84
 !i10b 1
-R10
-Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd|
-Z129 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd|
+R85
+Z163 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd|
+Z164 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_5ms_tick.vhd|
 !i113 1
 R13
 R14
 Atest
-R61
+DEx4 work 9 timer_5ms 0 22 157C6zhz;hHB7zB;`O`lz1
 R1
 R2
 R3
@@ -881,41 +1020,41 @@ Va5NSD;64e]BjeNR0dIMa[3
 !s100 FZj9Y8X97Hi`9eB^YQgCj1
 R8
 32
-R9
+R84
 !i10b 1
-R10
-R128
-R129
+R85
+R163
+R164
 !i113 1
 R13
 R14
 Etest_axis_screen
-Z130 w1652441677
+Z165 w1652441677
 R1
 R2
 R3
 R4
 !i122 533
 R5
-Z131 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd
-Z132 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd
+Z166 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd
+Z167 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd
 l0
 R43
 Vg=IQYe1Yj]oRIl;NP5EZ;0
 !s100 ZcFTX6ooV43[c@id^DV^11
 R8
 32
-Z133 !s110 1652617297
+Z168 !s110 1652617297
 !i10b 1
 R20
-Z134 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd|
-Z135 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd|
+Z169 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd|
+Z170 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_axis_screen.vhd|
 !i113 1
 R13
 R14
 Atest
-R113
-R31
+DEx4 work 11 nrstclk_sim 0 22 ZNDgg6k?Ozz7oY9@=0Ce]1
+R32
 R1
 R2
 R3
@@ -928,35 +1067,35 @@ Vmo2ngT:AK15CE@`h]WJ6A1
 !s100 lN4`dG_;Tfe;k0nMajF892
 R8
 32
-R133
+R168
 !i10b 1
 R20
-R134
-R135
+R169
+R170
 !i113 1
 R13
 R14
 Etest_gen_clk_nrst
-Z136 w1651948737
+Z171 w1651948737
 R1
 R2
 R3
 R4
 !i122 449
 R5
-R108
-R109
+Z172 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd
+Z173 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd
 l0
-R110
+R135
 V37g0h?_[n0b9DDT]7OIS62
 !s100 EU3ka<P]nG9Ug1g_UA4621
 R8
 32
-Z137 !s110 1652370282
+Z174 !s110 1652370282
 !i10b 1
-Z138 !s108 1652370282.000000
-R111
-R112
+Z175 !s108 1652370282.000000
+Z176 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd|
+Z177 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_gen_clk&nRst.vhd|
 !i113 1
 R13
 R14
@@ -965,19 +1104,19 @@ R1
 R2
 R3
 R4
-R54
+R56
 !i122 449
 l33
-R114
+Z178 L27 28
 VdoZDlQ=VkAFXfGCKh>?4P0
 !s100 nUODCF@3:UK:2`I1TkLJ63
 R8
 32
-R137
+R174
 !i10b 1
-R138
-R111
-R112
+R175
+R176
+R177
 !i113 1
 R13
 R14
@@ -986,10 +1125,10 @@ R1
 R2
 R3
 R4
-R54
+R56
 !i122 223
 l33
-R114
+R178
 VN?aiD?0IGgoCO[[Mi0PL40
 !s100 @_8GBTe1WVPQ3e5mIJdb`3
 R8
@@ -997,22 +1136,22 @@ R8
 !s110 1651948348
 !i10b 1
 !s108 1651948348.000000
-R111
-R112
+R176
+R177
 !i113 1
 R13
 R14
 w1651948344
 Etest_interfaz_spi
-Z139 w1651441146
+Z179 w1651441146
 R1
 R2
 R3
 R4
 !i122 246
 R5
-Z140 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl
-Z141 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl
+Z180 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl
+Z181 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl
 l0
 R43
 VZ]oIS<<b``BJS62k2Pm7D2
@@ -1022,8 +1161,8 @@ R8
 !s110 1651968487
 !i10b 1
 !s108 1651968486.000000
-Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl|
-Z143 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl|
+Z182 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl|
+Z183 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_interfaz_spi.vhdl|
 !i113 1
 R13
 R14
@@ -1041,35 +1180,35 @@ VgZl>m<I56imEDRm<;41^U2
 !s100 QYTY:?ITz`6[?>lRnE7EK1
 R8
 32
-Z144 !s110 1651946954
+Z184 !s110 1651946954
 !i10b 1
-Z145 !s108 1651946954.000000
-R142
-R143
+Z185 !s108 1651946954.000000
+R182
+R183
 !i113 1
 R13
 R14
 Etest_sck
-Z146 w1651358000
+Z186 w1651358000
 R1
 R2
 R3
 R4
 !i122 512
 R5
-Z147 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
-Z148 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
+Z187 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
+Z188 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd
 l0
 L6 1
 V7CER2_MTVekeXcl_?D`]c0
 !s100 h92iiGAf1a2DejeRYn8`G2
 R8
 32
-R9
+R84
 !i10b 1
-R10
-Z149 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
-Z150 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
+R85
+Z189 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
+Z190 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/modelsim/test_sck.vhd|
 !i113 1
 R13
 R14
@@ -1087,35 +1226,35 @@ VQ20WmhKSYVJMH[NW=CV6X3
 !s100 PVYB_OnMAc7J29CmTJ?Ba2
 R8
 32
-R144
+R184
 !i10b 1
-R145
-R149
-R150
+R185
+R189
+R190
 !i113 1
 R13
 R14
 Etimer_5ms
-Z151 w1652370277
+Z191 w1652728320
 R1
 R2
 R3
 R4
-!i122 524
+!i122 561
 R5
-Z152 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd
-Z153 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd
+Z192 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd
+Z193 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd
 l0
 L9 1
-V157C6zhz;hHB7zB;`O`lz1
-!s100 A;N5j:iQ4K7J`2YRbTeY00
+VQ1?EToNHiW1]o3`f7E?G83
+!s100 ATh@HXE:@@Pz?iHOAiQP`3
 R8
 32
-R19
+Z194 !s110 1652728325
 !i10b 1
-R20
-Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd|
-Z155 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd|
+Z195 !s108 1652728325.000000
+Z196 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd|
+Z197 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Controlador/timer_5ms.vhd|
 !i113 1
 R13
 R14
@@ -1124,19 +1263,19 @@ R1
 R2
 R3
 R4
-R61
-!i122 524
-l19
-L16 21
-VonGJW<I1WjP4O7A3C@SE>2
-!s100 SGJoF1;fHc^HZV1PgZh9N1
+R64
+!i122 561
+l21
+L18 21
+VokbUI6NTaBO]6JjzOR_VP2
+!s100 A`cR@g=ADb>MzTEzHN6IU1
 R8
 32
-R19
+R194
 !i10b 1
-R20
-R154
-R155
+R195
+R196
+R197
 !i113 1
 R13
 R14

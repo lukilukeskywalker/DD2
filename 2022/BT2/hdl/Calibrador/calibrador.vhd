@@ -8,6 +8,8 @@ use	ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity calibrador is
+	generic( DIV_5ms : natural := 250000
+		);
 	port(nRst: in	std_logic;
 		clk: in		std_logic;
 
@@ -53,6 +55,8 @@ architecture estructural of calibrador is
 					Y_media => Y_media
 					);
 		controlador: entity work.controlador(estructural)
+			generic map(DIV_5ms => DIV_5ms
+					)
 			port map(nRst => nRst,
 					clk => clk,
 					dato_rd => dato_rd,

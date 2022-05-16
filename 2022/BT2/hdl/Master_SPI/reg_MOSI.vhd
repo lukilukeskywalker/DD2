@@ -20,7 +20,7 @@ entity reg_MOSI is
 end entity;
 
 architecture rtl of reg_MOSI is
-	signal tx_buffer : std_logic_vector(16 downto 0);
+	signal tx_buffer : std_logic_vector(16 downto 0):="0"&x"0000";
 begin
 
 	MOSI_proc: process(clk, nRst)

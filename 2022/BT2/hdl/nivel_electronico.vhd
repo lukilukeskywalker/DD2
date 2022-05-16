@@ -8,6 +8,8 @@ use	ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity nivel_electronico is
+	generic( DIV_5ms: natural:= 250000
+		);
 	port(nRst: in std_logic;
 		clk: in std_logic;
 
@@ -31,7 +33,7 @@ architecture estructural of nivel_electronico is
 	signal asistant_X_disp: std_logic_vector(7 downto 0);
 	signal asistant_Y_disp: std_logic_vector(7 downto 0);
 	signal counter: std_logic_vector(5 downto 0);
-	signal tic_5ms: std_logic;
+	
 
 	begin
 		axis_screen_x: entity work.axis_screen(rtl)
@@ -49,6 +51,8 @@ architecture estructural of nivel_electronico is
 					led_disp => asistant_Y_disp
 					);
 		calibrador: entity work.calibrador(estructural)
+			generic map(DIV_5ms => DIV_5ms
+					)
 			port map(nRst => nRst,
 					clk => clk,
 					CS => CS,

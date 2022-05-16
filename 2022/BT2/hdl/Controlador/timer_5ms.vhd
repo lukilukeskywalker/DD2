@@ -7,6 +7,8 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity timer_5ms is
+	generic( DIV_5ms: natural:= 250000
+	);
 	port(nRst:	in	std_logic;
 		clk:	in	std_logic;
 		tic_5ms: buffer std_logic
@@ -14,8 +16,8 @@ entity timer_5ms is
 end entity timer_5ms;
 
 architecture rtl of timer_5ms is
-	constant DIV_5ms : natural := 250000;	--250000
-	signal cnt_tim_5ms: std_logic_vector(17 downto 0);
+	--constant DIV_5ms : natural := 250000;	--250000
+	signal cnt_tim_5ms: std_logic_vector(17 downto 0):="00"&x"0000";
 begin
 
 	cnt_timer: process(nRst, clk)
