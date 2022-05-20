@@ -4,6 +4,7 @@
 	--Comprobar que mientras se produce una transimision, CS esta a 0
 	--Comprobar el tiempo de transicion desde CS = 0 y SCK = 0, que sea adecuado segun especificaciones
 	--Comprobar que numero de pulsos SCK se corresponden con el tipo de operacion a realizar
+	--Contrastar el dato transmitido con el dato recibido por reg_miso
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -13,7 +14,10 @@ entity spi_monitor is
 	port(CS: in std_logic;
 		SCK: in std_logic;
 		MOSI: in std_logic;
-		MISO: in std_logic
+		MISO: in std_logic;
+		dato_rd: in std_logic_vector(7 downto 0);
+		ena_rd: in std_logic;
+		acel_tx: in std_logic_vector(31 downto 0)
 		);
 end entity;
 
@@ -92,6 +96,33 @@ begin
 			severity Error;
 		end if;
 	end process nWR_op_counter_test;
+--Contrastar el dato transmitido con el dato recibido por reg_miso
+	reg_MISO_test: process(CS, SCK, ena_rd)
+	variable first_tx: boolean := false;
+	variable nWR: std_logic:='0';
+	variable buffer_in: std_logic_vector(31 downto 0):=(others => '0');
+	begin
+		if(CS'event and CS= '0') then
+			first_tx:= true;
+		end if;
+		if(SCK'event and SCK = '0') then
+			if(first_tx = true) then
+				nWR := MOSI;
+				first_tx := false;
+			end if;		
+		end if;
+		if(ena_rd'event and ena_rd = '1') then
+			assert(nWR = '1') 
+			report "[spi_monitor] ERROR: Se esta leyendo aunque la operacion realizada sea de escritura"
+			severity Error;
+			buffer_in := buffer_in(23 downto 0) & dato_rd;
+		end if;
+		if(CS'event and CS = '1' and nWR = '1') then
+			assert (buffer_in = acel_tx)
+			report "[spi_monitor] ERROR: La comunicacion desde el slave al master no ha concluido correctamente"
+        	severity error;
+		end if;
+	end process reg_MISO_test;
 				
 end monitor;
 		

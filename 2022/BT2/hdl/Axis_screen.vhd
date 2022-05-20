@@ -21,7 +21,7 @@ entity axis_screen is
 end entity;
 
 architecture rtl of axis_screen is
-	signal grado: std_logic_vector(3 downto 0);
+	signal grado: std_logic_vector(3 downto 0):=(others => '0');
 begin
 
 	mostrador_proc: process(clk, nRst)

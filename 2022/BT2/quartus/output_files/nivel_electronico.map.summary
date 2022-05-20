@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri May 13 18:16:03 2022
+Analysis & Synthesis Status : Successful - Wed May 18 16:01:40 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : nivel_electronico
 Top-level Entity Name : nivel_electronico
 Family : MAX 10
-Total logic elements : 440
-    Total combinational functions : 409
+Total logic elements : 421
+    Total combinational functions : 392
     Dedicated logic registers : 191
 Total registers : 191
 Total pins : 30

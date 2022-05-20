@@ -26,10 +26,10 @@ entity controlador is
 		ena_rd:		buffer	std_logic;
 		
 	--SALIDAS PERIFERICO SPI
-		MISO: in	std_logic;
-		MOSI: buffer std_logic;
+		CS:   buffer std_logic;
 		SCK:  buffer std_logic;
-		CS:   buffer std_logic
+		MOSI: buffer std_logic;
+		MISO: in	std_logic		
 		); 
 end entity;
 

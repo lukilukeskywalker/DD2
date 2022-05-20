@@ -17,7 +17,7 @@ end entity timer_5ms;
 
 architecture rtl of timer_5ms is
 	--constant DIV_5ms : natural := 250000;	--250000
-	signal cnt_tim_5ms: std_logic_vector(17 downto 0):="00"&x"0000";
+	signal cnt_tim_5ms: std_logic_vector(17 downto 0):=(others => '0');
 begin
 
 	cnt_timer: process(nRst, clk)
