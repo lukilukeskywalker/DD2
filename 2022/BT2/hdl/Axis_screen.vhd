@@ -29,7 +29,7 @@ begin
 		if nRst = '0' then
 			led_disp <= x"FF";
 		elsif clk'event and clk = '1' then
-			if muestra_bias_rdy = '1' then
+			--if muestra_bias_rdy = '1' then
 				case grado is
 					when "0000" => led_disp <= "00000000";	--No es posible
 					when "0001" => led_disp <= "10000000";	--Min
@@ -50,7 +50,7 @@ begin
 					when others => led_disp <= x"FF";
 				
 				end case;
-			end if;
+			--end if;
 		end if;
 	end process mostrador_proc;
 -- Pag 10 Datasheet En modo normal con 10 bits de resolucion obtenemos una sensibilidad de 4mg/digito

@@ -12,7 +12,8 @@ use ieee.std_logic_unsigned.all;
 entity controlador_monitor is
 	generic(T_clk: time:= 20 ns;
 			DIV_5ms: natural:= 250000;
-			SPI_R_timing: time:= 5 ms
+			SPI_R_timing: time:= 5 ms;
+			omit_timing_monitor: boolean:= false
 		);
 	port(
 		nRst: in std_logic;
@@ -33,7 +34,7 @@ begin
 		if(nRst = '0') then 
 			timeout_start := now;
 		elsif(CS'event and CS = '0') then
-			assert (now - timeout_start) >= SPI_R_timing--(T_clk *DIV_5ms)
+			assert ((now - timeout_start) >= SPI_R_timing) or omit_timing_monitor = true--(T_clk *DIV_5ms)
 			report "[controlador_monitor] WARNING: El tiempo de inicio del sensor no ha sido respetado"
 			severity warning;
 		end if;
@@ -52,7 +53,7 @@ begin
 			if(first_tx = true) then
 				first_tx := false;
 				if (MOSI = '1') then	
-					assert ((timing - timing_1t) >=  SPI_R_timing)
+					assert ((timing - timing_1t) >=  SPI_R_timing) or omit_timing_monitor = true
 					report "[controlador_monitor] WARNING: Las lecturas no se estan realizando en el tiempo especificado por la especificacion"
 					severity Warning;
 				end if;
