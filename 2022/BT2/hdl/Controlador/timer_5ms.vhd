@@ -1,4 +1,4 @@
--- Autor Lukitas
+-- Autor LX0809 G4 Lukitas
 -- Fecha 04-may-22
 -- rev 1
 

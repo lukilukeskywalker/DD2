@@ -1,5 +1,5 @@
 
--- Autor Lukitas/rick
+-- Autor LX0809 G4 Lukitas/rick
 -- Fecha 04-may-22
 -- rev 1.1
 --Cambios:

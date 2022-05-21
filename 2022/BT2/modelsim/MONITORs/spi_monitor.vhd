@@ -1,4 +1,4 @@
---Autor: Lukas
+--Autor: LX0809 G4 Lukas
 --Objetivos: 
 	--Comprobar que la transicion de MOSI se realiza en el momento adecuado
 	--Comprobar que mientras se produce una transimision, CS esta a 0

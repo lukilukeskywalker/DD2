@@ -1,3 +1,8 @@
+--Autor DTE
+--v2: LX0809 G4 Lukas
+--Cambios realizados:
+	--Ahora el dato que se envia viene de otro simulador. De esta forma se consigue un test mas completo
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
