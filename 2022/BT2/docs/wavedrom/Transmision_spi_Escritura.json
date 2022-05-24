@@ -1,0 +1,27 @@
+
+{ signal: [
+  {name: 'ini', wave: '010...........................'},
+  ['Master',
+    
+   {name: 'CS',  wave: '1.0..........................1', node: ''},
+   {name: 'SCK (5Mhz)', period: '2',   wave: '1.n...........h'},
+   ['MOSI',
+    {name: 'Value', period: '2',   wave: 'xx3333333333|3X', data: ["nWR", "MS", "ADD_5", "ADD_4", "ADD_3", "ADD_2", "ADD_1", "ADD_0","DATA_7", "DATA_6", "DATA_0"]},
+    {name: 'Data', period: '2',   wave: 'xx0.33333333|3X', data: [ "ADD_5", "ADD_4", "ADD_3", "ADD_2", "ADD_1", "ADD_0","DATA_7", "DATA_6", "DATA_0"]}
+   ],
+   {name: 'MISO', period: '2',   wave: '...............'},
+
+  ],
+
+
+],
+   edge: [
+  ],
+   head:{
+   text: 'Transmision SPI',
+   tick:-2},
+   foot:{
+   text:'SPI Modo Escritura'
+   }
+   
+}

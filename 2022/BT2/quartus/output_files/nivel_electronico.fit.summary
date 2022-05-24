@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed May 18 16:01:54 2022
+Fitter Status : Successful - Sat May 21 17:11:04 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : nivel_electronico
 Top-level Entity Name : nivel_electronico
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 404 / 49,760 ( < 1 % )
+Total logic elements : 402 / 49,760 ( < 1 % )
     Total combinational functions : 393 / 49,760 ( < 1 % )
     Dedicated logic registers : 191 / 49,760 ( < 1 % )
 Total registers : 191

@@ -1,16 +1,18 @@
+
 { signal: [
-  {    name: 'clk (50Mhz)',   wave: 'P.............|..............'},
+  {name: 'clk (50Mhz)',   wave: 'P.............|..............'},
+  {name: 'ini', wave: '010...........|..............'},
   ['Master',
-    ['ctrl',
-     	{name: 'ini', wave: '010...........|..............'},
+    
+   {name: 'CS',  wave: '1.0...........|...........1..', node: '..I.......................Y'},
+     {name: 'SCK (5Mhz)',  wave: '1..0....1....0|1....0....1...', node: '...A.........B...........Z'},
+     {                                                           node: '..OC.........D...........XV'},
+     ['ctrl',
+     	
       	{name: 'nWR', wave: '0.............|..............'},
       	{  name: 'rd_miso',  wave: '0......10.....|.........10...', node:'........................NM'},
      {  name: 'tx_mosi', wave: '0.10........10|....10........', node:'...................KL'},
     ],
-    
-     {name: 'SCK (5Mhz)',  wave: '1..0....1....0|1....0....1...', node: '...A.........B'},
-     {                                                            node: '...C.........D'},
-     {name: 'CS',  wave: '1.0...........|...........1..'}
   ],
   {},
   ['Counters',
@@ -22,13 +24,13 @@
   ]
 ],
    edge: [
-    'C-A','D-B','C<->D 0.2 us', 'H->K','L->G', 'W->N', 'M->E'
+    'I-O','O<->C 20ns','C-A','D-B','C<->D 0.2 us', 'H->K','L->G', 'W->N', 'M->E', 'Z-X', 'Y-V', 'X<->V 20ns'
   ],
    head:{
    text: 'Generacion SCK, CS y señales de control',
    tick:-2},
    foot:{
-   text:'SPI Modo Transmisión'
+   text:'SPI Modo Transmision'
    }
    
 }

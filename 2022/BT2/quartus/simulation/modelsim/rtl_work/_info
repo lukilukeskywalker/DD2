@@ -1,0 +1,125 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/lukilukeskywalker/Documentos/DD2/2022/BT2/quartus/simulation/modelsim
+Emaster_spi
+w1651967021
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
+F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd
+l0
+L9 1
+VzSZRKKR=Ql<<2KX;kVzm33
+!s100 NA<id;IIBCVmTX2NHFYfd3
+Z5 OV;C;2020.1;71
+31
+Z6 !s110 1653146739
+!i10b 1
+Z7 !s108 1653146739.000000
+!s90 -reportprogress|300|-93|-work|work|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd|
+!s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd|
+!i113 1
+Z8 o-93 -work work
+Z9 tExplicit 1 CvgOpt 0
+Ereg_miso
+Z10 w1651357361
+R1
+R2
+R3
+R4
+!i122 1
+R0
+Z11 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
+Z12 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd
+l0
+L9 1
+VBF:fdC_<geWK^^;h_Qg]33
+!s100 iBHlH>=H;ZiION5HHb2=>0
+R5
+31
+R6
+!i10b 1
+R7
+Z13 !s90 -reportprogress|300|-93|-work|work|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd|
+Z14 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd|
+!i113 1
+R8
+R9
+Artl
+R1
+R2
+R3
+R4
+DEx4 work 8 reg_miso 0 22 BF:fdC_<geWK^^;h_Qg]33
+!i122 1
+l19
+L18 14
+Vk^H;9S7SQ]z1TQ^ES^XM13
+!s100 `oOCBTMQS<0eklT:dd=S61
+R5
+31
+R6
+!i10b 1
+R7
+R13
+R14
+!i113 1
+R8
+R9
+Ereg_mosi
+Z15 w1653037345
+R1
+R2
+R3
+R4
+!i122 0
+R0
+Z16 8/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
+Z17 F/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd
+l0
+L9 1
+Vc7;DIFRjMJ8REY9TdFZZf2
+!s100 NGkhM01lgB3YXEG0kU@1G0
+R5
+31
+R6
+!i10b 1
+Z18 !s108 1653146738.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd|
+Z20 !s107 /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd|
+!i113 1
+R8
+R9
+Artl
+R1
+R2
+R3
+R4
+DEx4 work 8 reg_mosi 0 22 c7;DIFRjMJ8REY9TdFZZf2
+!i122 0
+l24
+L22 25
+VBl7XgOQ;Z=3`zGB<7RD052
+!s100 4Td<Mbo^0MfHnd>ZBVT:^1
+R5
+31
+R6
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R8
+R9

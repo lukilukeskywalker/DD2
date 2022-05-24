@@ -1,0 +1,221 @@
+Analysis & Synthesis report for MEDTH
+Tue May 19 21:09:11 2020
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue May 19 21:09:11 2020           ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; MEDTH                                       ;
+; Top-level Entity Name              ; MEDTH                                       ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M50DAF484C6GES   ;                    ;
+; Top-level entity name                                                      ; MEDTH              ; MEDTH              ;
+; Family name                                                                ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Tue May 19 21:08:53 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MEDTH -c MEDTH
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/procesador_t_h/procesador_medida.vhd
+    Info (12022): Found design unit 1: procesador_medida-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/procesador_t_h/procesador_medida.vhd Line: 37
+    Info (12023): Found entity 1: procesador_medida File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/procesador_t_h/procesador_medida.vhd Line: 16
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/medth.vhd
+    Info (12022): Found design unit 1: MEDTH-struct File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/MEDTH.vhd Line: 56
+    Info (12023): Found entity 1: MEDTH File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/MEDTH.vhd Line: 37
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/timer/timer.vhd
+    Info (12022): Found design unit 1: timer-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/timer/timer.vhd Line: 40
+    Info (12023): Found entity 1: timer File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/timer/timer.vhd Line: 24
+Warning (12019): Can't analyze file -- file ../hdl/reloj/reloj.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/reloj/ctrl_reloj.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/reloj/cnt_seg.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/reloj/cnt_reloj.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/reloj/cnt_min.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/reloj/cnt_horas.vhd
+    Info (12022): Found design unit 1: cnt_horas-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/reloj/cnt_horas.vhd Line: 19
+    Info (12023): Found entity 1: cnt_horas File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/reloj/cnt_horas.vhd Line: 5
+Info (12021): Found 3 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/pll/pll_100mhz_conarst.vhd
+    Info (12022): Found design unit 1: pll_100mhz_conarst-sim File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/pll/pll_100MHz_conarst.vhd Line: 53
+    Info (12022): Found design unit 2: pll_100mhz_conarst-SYN File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/pll/pll_100MHz_conarst.vhd Line: 73
+    Info (12023): Found entity 1: pll_100MHz_conarst File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/pll/pll_100MHz_conarst.vhd Line: 43
+Warning (12019): Can't analyze file -- file ../hdl/periferico_i2c/reg_out_SDA.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/periferico_i2c/reg_in_SDA.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/periferico_i2c/RAM_DP_256x8.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/periferico_i2c/periferico_i2c.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/periferico_i2c/interfaz_periferico.vhd is missing
+Warning (12019): Can't analyze file -- file ../hdl/periferico_i2c/interfaz_i2c.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/periferico_i2c/gen_scl.vhd
+    Info (12022): Found design unit 1: gen_SCL-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/gen_SCL.vhd Line: 85
+    Info (12023): Found entity 1: gen_SCL File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/gen_SCL.vhd Line: 72
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/periferico_i2c/filtro_sda.vhd
+    Info (12022): Found design unit 1: filtro_SDA-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/filtro_SDA.vhd Line: 42
+    Info (12023): Found entity 1: filtro_SDA File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/filtro_SDA.vhd Line: 34
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/periferico_i2c/fifo_dp_256x8.vhd
+    Info (12022): Found design unit 1: fifo_dp_256x8-SYN File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/FIFO_dp_256x8.vhd Line: 60
+    Info (12023): Found entity 1: FIFO_dp_256x8 File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/FIFO_dp_256x8.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/periferico_i2c/fifo_256x8_dp.vhd
+    Info (12022): Found design unit 1: fifo_256x8_dp-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/fifo_256x8_dp.vhd Line: 25
+    Info (12023): Found entity 1: fifo_256x8_dp File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/fifo_256x8_dp.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/periferico_i2c/control_i2c.vhd
+    Info (12022): Found design unit 1: ctrl_i2c-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/control_i2c.vhd Line: 104
+    Info (12023): Found entity 1: ctrl_i2c File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/periferico_i2c/control_i2c.vhd Line: 65
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/displays/displays.vhd
+    Info (12022): Found design unit 1: displays-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/displays/displays.vhd Line: 55
+    Info (12023): Found entity 1: displays File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/displays/displays.vhd Line: 32
+Info (12021): Found 2 design units, including 1 entities, in source file /users/yop/documents/modelsim/medth/hdl/control_teclado/ctrl_tec.vhd
+    Info (12022): Found design unit 1: ctrl_tec-rtl File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/control_teclado/ctrl_tec.vhd Line: 37
+    Info (12023): Found entity 1: ctrl_tec File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/control_teclado/ctrl_tec.vhd Line: 22
+Error (10481): VHDL Use Clause error at MEDTH.vhd(101): design library "work" does not contain primary unit "reloj". Verify that the primary unit exists in the library and has been successfully compiled. File: C:/Users/yop/Documents/ModelSim/MEDTH/hdl/MEDTH.vhd Line: 101
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 12 warnings
+    Error: Peak virtual memory: 4989 megabytes
+    Error: Processing ended: Tue May 19 21:09:11 2020
+    Error: Elapsed time: 00:00:18
+    Error: Total CPU time (on all processors): 00:00:37
+
+

@@ -1,0 +1,62 @@
+# ERROR: No extended dataflow license exists
+# do nivel_electronico_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:25:38 on May 21,2022
+# vcom -reportprogress 300 -93 -work work /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MOSI.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity reg_MOSI
+# -- Compiling architecture rtl of reg_MOSI
+# End time: 17:25:39 on May 21,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:25:39 on May 21,2022
+# vcom -reportprogress 300 -93 -work work /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/reg_MISO.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity reg_MISO
+# -- Compiling architecture rtl of reg_MISO
+# End time: 17:25:39 on May 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:25:39 on May 21,2022
+# vcom -reportprogress 300 -93 -work work /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity master_spi
+# -- Compiling architecture estructural of master_spi
+# ** Error: (vcom-11) Could not find work.gen_sck.
+# ** Error (suppressible): /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd(38): (vcom-1195) Cannot find expanded name "work.gen_SCK".
+# ** Error: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd(38): Unknown expanded name.
+# -- Loading entity reg_MOSI
+# -- Loading entity reg_MISO
+# ** Note: /home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd(70): VHDL Compiler exiting
+# End time: 17:25:39 on May 21,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./nivel_electronico_run_msim_rtl_vhdl.do line 10
+# /home/lukilukeskywalker/.intelFPGA_lite/20.1/quartus/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {/home/lukilukeskywalker/Documentos/DD2/2022/BT2/hdl/Master_SPI/Master_SPI.vhd}"
