@@ -122,7 +122,7 @@ begin
 				SCK => SCK,
 				CS => CS
 				);
-	spi_test_slave: entity work.agente_spi(sim)
+	spi_test_slave: entity work.agente_spi_original(sim)
 		port map(pos_X => pos_X,
 				pos_Y => pos_Y,
 				nCS => CS,
