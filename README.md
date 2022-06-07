@@ -11,6 +11,7 @@ ya que en ese caso no habreis aprendido nada y probablemente no aprobeís los ex
 Este repositorio esta aquí como una ayuda al estudio y no un sustituto.
 ## Why do you do this?
 Aunque la asignatura esta super bien documentada (props to the teachers), muchas cosas estan sucediendo al mismo tiempo, y no todo el mundo tiene las mismas
-*condiciones de arranque*   
+*"condiciones de arranque"*   
 Por otra parte me he dado cuenta de unas personas tienen mas oportunidades de conseguir apuntes de amigos que otras personas.  
 Nothing wrong there, but it is the way it is. Con este repositorio espero igualar la situacion un poco. Ademas. No me gusta nada wuolah.
+
